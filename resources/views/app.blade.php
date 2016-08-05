@@ -21,10 +21,10 @@
 	<nav class="main">
 		<div class="container">
 			<a href="/" class="brand">
-				<img src="/assets/img/laravel-auditing-logo.png" height="30" alt="Laravel Auditing logo" style="margin-left: 15px; margin-right: 0">
+				<img src="/assets/img/laravel-auditing-logo.png" alt="Laravel Auditing logo" style="margin-left: 15px;margin-right: 0;height: 40px;top: 14px;">
 				Laravel Auditing
 			</a>
-
+			
 			<div class="responsive-sidebar-nav">
 				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
 			</div>
