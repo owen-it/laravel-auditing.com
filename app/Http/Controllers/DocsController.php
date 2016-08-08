@@ -43,8 +43,13 @@ class DocsController extends Controller {
 		if ( ! $this->isVersion($version)) {
 			return redirect('docs/'.DEFAULT_VERSION.'/'.$version, 301);
 		}
+		
+		if (! defined('CURRENT_VERSION')) {
+			define('CURRENT_VERSION', $version);
+		}
 
-		$content = $this->docs->get($version, $page ?: 'introduction');
+		$sectionPage = $page ?: 'installation';
+		$content = $this->docs->get($version, $sectionPage);
 
 		if (is_null($content)) {
 			abort(404);
@@ -59,6 +64,12 @@ class DocsController extends Controller {
 		} elseif ( ! is_null($page)) {
 			return redirect('/docs/'.$version);
 		}
+		
+		$canonical = null;
+		
+		if ($this->docs->sectionExists(DEFAULT_VERSION, $sectionPage)) {
+			$canonical = 'docs/'.DEFAULT_VERSION.'/'.$sectionPage;
+		}
 
 		return view('docs', [
 			'title' => count($title) ? $title->text() : null,
@@ -67,6 +78,7 @@ class DocsController extends Controller {
 			'currentVersion' => $version,
 			'versions' => Documentation::getDocVersions(),
 			'currentSection' => $section,
+			'canonical' => $canonical,
 		]);
 	}
 
