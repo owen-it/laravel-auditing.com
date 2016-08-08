@@ -8,6 +8,11 @@
 	<meta name="description" content="Laravel Auditing allows you to record changes to an Eloquent model's set of data by simply adding its trait to your model.">
 	<meta name="keywords" content="laravel, auditing, owen-it, php, framework, web">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	@if (isset($canonical))
+		<link rel="canonical" href="{{ url($canonical) }}" />
+	@endif
+	
 	<!--[if lte IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
