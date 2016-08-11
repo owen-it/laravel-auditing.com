@@ -40,7 +40,7 @@ class Documentation {
 	 */
 	public function getIndex($version)
 	{
-		return $this->cache->remember('docs.'.$version.'.index', env('TIME_CACHE'), function() use ($version) {
+		return $this->cache->remember('docs.'.$version.'.index', env('TIME_CACHE', 5), function() use ($version) {
 			$path = base_raw_path($version.'/documentation.md');
 
 			if (file_raw_exists($path)) {
@@ -60,7 +60,7 @@ class Documentation {
 	 */
 	public function get($version, $page)
 	{
-		return $this->cache->remember('docs.'.$version.'.'.$page, env('TIME_CACHE'), function() use ($version, $page) {
+		return $this->cache->remember('docs.'.$version.'.'.$page, env('TIME_CACHE', 5), function() use ($version, $page) {
 			$path = base_raw_path($version.'/'.$page.'.md');
 
 			if (file_raw_exists($path)) {
