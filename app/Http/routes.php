@@ -11,6 +11,8 @@
 |
 */
 
+use Cache;
+
 /**
  * Set the default documentation version...
  */
