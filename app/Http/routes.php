@@ -25,7 +25,11 @@ function markdown($text) {
 	return (new ParsedownExtra)->text($text);
 }
 
-Route::get('/flush', function() {
+Route::get('/flush/{version?}', function($version = null) {
+	if($version){
+		Cache::forget($version);
+	}
+	
 	Cache::flush();
 
 	return redirect('docs/'.DEFAULT_VERSION);
