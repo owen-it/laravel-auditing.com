@@ -7,7 +7,7 @@
 	<ul class="dropdown-menu" role="menu">
 		<li><a href="https://github.com/owen-it/laravel-auditing">GitHub</a></li>
 		<li class="divider"></li>
-		<li><a href="/docs/{{ ucfirst($currentVersion) }}/contributing">Contributing</a></li>
-		<li><a href="/docs/{{ ucfirst($currentVersion) }}/faq">Having problems?</a></li>
+		<li><a href="/docs/{{ $currentVersion }}/contributing">Contributing</a></li>
+		<li><a href="/docs/{{ $currentVersion }}/faq">Having problems?</a></li>
 	</ul>
 </li>
