@@ -43,11 +43,11 @@ class Documentation {
 		return $this->cache->remember('docs.'.$version.'.index', env('TIME_CACHE', 5), function() use ($version) {
 			$path = base_raw_path($version.'/documentation.md');
 
-			if (file_raw_exists($path)) {
+			//if (file_raw_exists($path)) {
 				return $this->replaceLinks($version, markdown(@file_get_contents($path)));
-			}
+			//}
 
-			return null;
+			//return null;
 		});
 	}
 
@@ -63,11 +63,11 @@ class Documentation {
 		return $this->cache->remember('docs.'.$version.'.'.$page, env('TIME_CACHE', 5), function() use ($version, $page) {
 			$path = base_raw_path($version.'/'.$page.'.md');
 
-			if (file_raw_exists($path)) {
+			//if (file_raw_exists($path)) {
 				return $this->replaceLinks($version, markdown(@file_get_contents($path)));
-			}
+			//}
 
-			return null;
+			//return null;
 		});
 	}
 
@@ -92,9 +92,11 @@ class Documentation {
 	 */
 	public function sectionExists($version, $page)
 	{
-		return file_raw_exists(
-			base_raw_path($version.'/'.$page.'.md')
-		);
+		return true;
+		
+		//return file_raw_exists(
+		//	base_raw_path($version.'/'.$page.'.md')
+		//);
 	}
 
 	/**
