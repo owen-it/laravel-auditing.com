@@ -26,15 +26,13 @@ function markdown($text) {
 }
 
 Route::get('/flush/{version?}', function($version = null) {
-	
-	
-	
+
 	Artisan::call('view:clear');
 	
 	if($version){
 		
 		if(! Cache::has($version)){
-			dd('No cache');
+			dd('No cache '.$version);
 		}
 		
 		Cache::forget($version);
