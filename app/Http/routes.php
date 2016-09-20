@@ -30,7 +30,7 @@ Route::get('/flush/{version?}', function($version = null) {
 	
 	if($version){
 		Cache::forget($version);
-		eturn redirect('docs/' . $version);
+		return redirect('docs/' . $version);
 	}
 	
 	Cache::flush();
