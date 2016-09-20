@@ -31,10 +31,14 @@ Route::get('/flush/{version?}', function($version = null) {
 	
 	if($version){
 		
+		if($version == 'dd'){
+			dd(Cache::get());
+		}
+		
 		if(! Cache::has($version)){
 			dd('No cache '.$version);
 		}
-		
+
 		Cache::forget($version);
 		
 		return redirect('docs/' . $version);
