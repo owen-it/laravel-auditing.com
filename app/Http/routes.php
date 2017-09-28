@@ -11,7 +11,7 @@
 |
 */
 
-use Cache;
+use Illuminate\Support\Facades\Cache;
 
 /**
  * Set the default documentation version...
@@ -49,6 +49,6 @@ Route::get('/flush/{version?}', function($version = null) {
 	return redirect('docs/'.DEFAULT_VERSION);
 });
 
-Route::get('/', 'DocsController@showRootPage');
+Route::get('/', 'DocsController@showWelcomePage');
 Route::get('docs', 'DocsController@showRootPage');
 Route::get('docs/{version}/{page?}', 'DocsController@show');

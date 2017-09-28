@@ -34,6 +34,19 @@ class DocsController extends Controller {
 	}
 
 	/**
+	 * Show the welcome documentation page (/welcome).
+	 *
+	 * @return Response
+	 */
+	 public function showWelcomePage()
+	 {
+		 return view('welcome', [
+			'currentVersion' => DEFAULT_VERSION,
+			'versions' => Documentation::getDocVersions(),
+		 ]);
+	 }
+
+	/**
 	 * Show a documentation page.
 	 *
 	 * @return Response

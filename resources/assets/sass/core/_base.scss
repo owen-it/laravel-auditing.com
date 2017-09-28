@@ -9,8 +9,7 @@ body {
 	color: $color__gray;
 	font-family: $font;
 	font-size: 16px;
-	background: #fff url('/assets/img/cloud-bar.png') repeat-x;
-	padding-top: 10px;
+	overflow: auto;
 }
 
 h1, h2, h3, h4 {
@@ -69,5 +68,25 @@ blockquote {
 	}
 	a {
 		color: #fff;
+	}
+}
+
+.wrapper-logo {
+	padding: 100px 0;
+	text-align: center;
+	img {
+		transform: rotate(-15deg);
+		transition: all 200ms cubic-bezier(1, 0.07, 0, 0.96);
+		opacity: 0.7;
+	}
+
+	img:hover {
+		transform: rotate(15deg);
+	}
+
+	.buttons {
+		a {
+			margin: 0 10px; 
+		}
 	}
 }

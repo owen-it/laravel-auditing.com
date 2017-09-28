@@ -16,7 +16,7 @@
 	<!--[if lte IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" href="{{ elixir('assets/css/laravel.css') }}">
+	<link rel="stylesheet" href="/assets/css/laravel.css">
 	<link rel="apple-touch-icon" href="/favicon.png">
 </head>
 <body class="@yield('body-class', 'docs') language-php">
@@ -51,10 +51,7 @@
 			@include('partials.main-nav')
 		</ul>
 		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
-		<p class="less-significant"><a href="http://jackmcdade.com">Design by Jack McDade</a></p>
 	</footer>
-
-
 
 	<script src="{{ elixir('assets/js/laravel.js') }}"></script>
 	<script src="/assets/js/viewport-units-buggyfill.js"></script>

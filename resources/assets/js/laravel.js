@@ -1,3 +1,13 @@
+require('./jquery.js'); 
+require('./plugins/prism.js'); 
+require('./plugins/bootstrap.js'); 
+require('./plugins/scotchPanels.js'); 
+require('./plugins/algoliasearch.js'); 
+require('./plugins/typeahead.js'); 
+require('./plugins/hogan.js'); 
+require('./plugins/mousetrap.js'); 
+require('./laravel.js');
+
 $(function() {
   // Smooth scroll to anchor
   $('body.home a[href*=#]:not([href=#])').click(function() {
