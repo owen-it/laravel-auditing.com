@@ -29,6 +29,13 @@
 
 	<article>
 		{!! $content !!}
+
+		<div class="footer-contribute">
+			Caught a mistake or want to contribute to the documentation?
+			<a href="https://github.com/owen-it/laravel-auditing-doc/blob/{!! $currentVersion !!}/{!! $sectionPage !!}.md" target="_blank">
+				Edit this page on Github!
+			</a>
+		</div>
 	</article>
 	
 </div>

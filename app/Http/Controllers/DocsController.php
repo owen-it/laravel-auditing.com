@@ -92,6 +92,7 @@ class DocsController extends Controller {
 			'versions' => Documentation::getDocVersions(),
 			'currentSection' => $section,
 			'canonical' => $canonical,
+			'sectionPage' => $sectionPage,
 		]);
 	}
 

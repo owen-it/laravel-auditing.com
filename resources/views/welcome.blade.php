@@ -7,10 +7,10 @@
   </a>
   <div>
     <h1>Why auditing?</h1>
-    <p class="why">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, dolorum corrupti! Aliquid,<br> 
-      labore sunt ab sequi, ipsa iste sapiente delectus eum sit, accusamus ea odit quaerat?<br> 
-      Natus delectus voluptatem asperiores!</p>
+    <p class="container why">
+      Laravel Auditing allows you to keep a history of model changes by simply using a trait.<br />
+      Retrieving the audited data is straightforward, making it possible to display it in various ways.
+    </p>
     <p class="buttons">
       <a href="/docs" class="btn btn-default">GET STARTED</a>
       or 

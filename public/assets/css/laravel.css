@@ -466,6 +466,10 @@ h4 {
   margin: 0 auto;
 }
 
+.container .why {
+  padding: 20px 20px 50px 20px;
+}
+
 a {
   color: #ff1e45;
   text-decoration: none;
@@ -2796,6 +2800,14 @@ nav.main .switcher .dropdown-menu > li > a {
     margin-left: 0px;
     padding: 60px 50px 30px 30px;
   }
+}
+
+.footer-contribute {
+  color: #7f8c8d;
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.9em;
 }
 
 body.the-404 .contain {

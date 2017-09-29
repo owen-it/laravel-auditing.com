@@ -95,7 +95,6 @@ class CustomParser extends ParsedownExtra
                 }
             }
 
-            #
             # ~
 
             foreach ($blockTypes as $blockType) {

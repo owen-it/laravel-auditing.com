@@ -1,4 +1,4 @@
-<li class="nav-docs"><a href="/docs">Docs</a></li>
+<li class="nav-docs"><a href="/docs">Documentation</a></li>
 
 <li class="nav-docs"><a href="https://laravel.com" target="_blank">The Laravel</a></li>
 
@@ -9,5 +9,6 @@
 		<li class="divider"></li>
 		<li><a href="/docs/{{ $currentVersion }}/contributing">Contributing</a></li>
 		<li><a href="/docs/{{ $currentVersion }}/faq">Having problems?</a></li>
+		<li><a href="/docs/{{ $currentVersion }}/upgrading">Upgrading</a></li>
 	</ul>
 </li>
