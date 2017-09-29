@@ -50,7 +50,7 @@
 		<ul>
 			@include('partials.main-nav')
 		</ul>
-		<p>Laravel is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.</p>
+		<p>Laravel auditing is a package maintained by OwenIt. Copyright &copy;</p>
 	</footer>
 
 	<script src="{{ elixir('assets/js/laravel.js') }}"></script>
