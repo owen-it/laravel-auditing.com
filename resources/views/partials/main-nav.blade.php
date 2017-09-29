@@ -1,6 +1,4 @@
-<li class="nav-docs"><a href="/docs">Documentation</a></li>
-
-<li class="nav-docs"><a href="https://laravel.com" target="_blank">The Laravel</a></li>
+<li class="nav-docs"><a href="https://laravel.com" target="_blank">Laravel</a></li>
 
 <li class="dropdown community-dropdown">
 	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Community <span class="caret"></span></a>
@@ -9,6 +7,5 @@
 		<li class="divider"></li>
 		<li><a href="/docs/{{ $currentVersion }}/contributing">Contributing</a></li>
 		<li><a href="/docs/{{ $currentVersion }}/faq">Having problems?</a></li>
-		<li><a href="/docs/{{ $currentVersion }}/upgrading">Upgrading</a></li>
 	</ul>
 </li>
