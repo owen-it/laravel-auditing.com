@@ -6,6 +6,6 @@
 		<li><a href="https://github.com/owen-it/laravel-auditing">GitHub</a></li>
 		<li class="divider"></li>
 		<li><a href="/docs/{{ $currentVersion }}/contributing">Contributing</a></li>
-		<li><a href="/docs/{{ $currentVersion }}/faq">Having problems?</a></li>
+		<li><a href="/docs/{{ $currentVersion }}/problems">Having problems?</a></li>
 	</ul>
 </li>
