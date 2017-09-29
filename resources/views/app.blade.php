@@ -50,9 +50,7 @@
 		<ul>
 			@include('partials.main-nav')
 		</ul>
-		<p>The Laravel Auditing package - Copyright &copy; <script>
-			document.write(new Date().getFullYear())
-		</script>.</p>
+		<p>The Laravel Auditing package - Copyright &copy; {!! date('Y') !!}.</p>
 	</footer>
 
 	<script src="{{ elixir('assets/js/laravel.js') }}"></script>
