@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="flattr:id" content="12ek11">
 	<title>{{ isset($title) ? $title . ' - ' : null }}Laravel Auditing</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="author" content="OwenIt">
