@@ -12,7 +12,7 @@
       about possible discrepancies and anomalies that could indicate business concerns or suspect activities.
     </p>
     <p class="buttons">
-      <a href="/docs" class="btn btn-default">GET STARTED</a>
+      <a href="/docs/{!! $currentVersion !!}/introduction" class="btn btn-default">GET STARTED</a>
       or 
       <a target="_blank" aria-label="Star me on GitHub" href="https://github.com/owen-it/laravel-auditing" >
       <span class="svg-icon"><svg id="i-github" viewBox="0 0 64 64" width="40" height="40" style="vertical-align: bottom;">

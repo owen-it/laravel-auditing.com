@@ -54,7 +54,7 @@
 		<p>The Laravel Auditing package - Copyright &copy; {!! date('Y') !!}.</p>
 	</footer>
 
-	<script src="{{ elixir('assets/js/laravel.js') }}"></script>
+	<script src="/assets/js/laravel.js"></script>
 	<script src="/assets/js/viewport-units-buggyfill.js"></script>
 	<script>window.viewportUnitsBuggyfill.init();</script>
 	<script>
