@@ -5,7 +5,7 @@
 	<meta name="flattr:id" content="12ek11">
 	<title>{{ isset($title) ? $title . ' - ' : null }}Laravel Auditing</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="flattr:id" content="12ek11">
+	<meta name="flattr:id" content="62prjo">
 	<meta name="author" content="OwenIt">
 	<meta name="description" content="Laravel Auditing allows you to record changes to an Eloquent model's set of data by simply adding its trait to your model.">
 	<meta name="keywords" content="laravel, auditing, owen-it, php, framework, web">
