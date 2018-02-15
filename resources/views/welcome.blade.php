@@ -22,7 +22,7 @@
       </a>  
     </p>
     <p class="buttons">
-      <a href="https://opencollective.com/laravel-auditing" class="btn btn-default">DONATE</a>
+      <a href="https://opencollective.com/laravel-auditing/donate" class="btn btn-default">DONATE</a>
     </p>
   </div>
 </div>
