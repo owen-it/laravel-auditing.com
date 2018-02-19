@@ -1752,8 +1752,6 @@ nav.main {
   border-bottom: 1px solid #dee0df;
   border-top: 7px solid #ff1e45;
   background-color: #FFFFFF;
-  -webkit-box-shadow: -1px 4px 5px rgba(0, 0, 0, 0.14);
-          box-shadow: -1px 4px 5px rgba(0, 0, 0, 0.14);
 }
 
 nav.main:after {
