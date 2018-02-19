@@ -1685,6 +1685,10 @@ pre.line-numbers > code {
   color: #fff;
 }
 
+.btn .material-icons {
+  vertical-align: bottom;
+}
+
 footer.main {
   background: #fafafa;
   padding: 35px 20px;
