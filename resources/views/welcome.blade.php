@@ -28,5 +28,61 @@
     </p>
   </div>
 </div>
+<div class="container">
+  <div class="callout rule">
+    <span class="text">Features</span>
+  </div>
+  <div class="packages">
+      <div class="third">
+          <div class="package">
+              <div class="icon">{!! svg('package') !!}</div>
+              <div class="content">
+                  <a href="/docs/valet" class="package-title">Valet</a>
+                  <p>A Laravel development environment for Mac minimalists. No Vagrant, no Apache, no fuss.</p>
+              </div>
+          </div>
+          <div class="package">
+              <div class="icon">{!! svg('package') !!}</div>
+              <div class="content">
+                  <a href="https://cachethq.io" class="package-title">Cachet</a>
+                  <p>Cachet is the best way to inform customers of downtime. This is your status page.</p>
+              </div>
+          </div>
+      </div>
+      <div class="third">
+          <div class="package">
+              <div class="icon">{!! svg('package') !!}</div>
+              <div class="content">
+                  <a href="/docs/mix" class="package-title">Mix</a>
+                  <!-- <p>If you've ever been frustrated with Gulp and asset compilation, Elixir is for you.</p> -->
+                  <p>Laravel Mix makes front-end a breeze. Start using SASS and Webpack in minutes.</p>
+              </div>
+          </div>
+          <div class="package">
+              <div class="icon">{!! svg('package') !!}</div>
+              <div class="content">
+                  <a href="https://spark.laravel.com" class="package-title">Spark</a>
+                  <p>Powerful SaaS application scaffolding. Stop writing boilerplate & focus on your application.</p>
+              </div>
+          </div>
+      </div>
+      <div class="third">
+          <div class="package">
+              <div class="icon">{!! svg('package') !!}</div>
+              <div class="content">
+                  <a href="https://lumen.laravel.com" class="package-title">Lumen</a>
+                  <p>If all you need is an API and lightning fast speed, try Lumen. It’s Laravel super-light.</p>
+              </div>
+          </div>
+          <div class="package last">
+              <div class="icon">{!! svg('package') !!}</div>
+              <div class="content">
+                  <a href="https://statamic.com" class="package-title">Statamic</a>
+                  <p>Need a CMS that runs on Laravel and is built for developers <em>and</em> clients? Look no further. </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 
 @endsection
