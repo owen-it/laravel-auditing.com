@@ -11,3 +11,6 @@
 	</ul>
 </li>
 <li class="nav-docs"><a href="https://laravel.com" target="_blank">Laravel</a></li>
+<li class="nav-docs"><a href="https://laravel.com" target="_blank"><i class="fab fa-github"></i></a></li>
+
+
