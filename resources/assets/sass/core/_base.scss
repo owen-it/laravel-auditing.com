@@ -1,26 +1,33 @@
-* { box-sizing: border-box; }
+* {
+	box-sizing: border-box;
+}
+
+html {
+}
 
 body {
 	color: $color__gray;
 	font-family: $font;
 	font-size: 16px;
-	background: #fff url('/assets/img/cloud-bar.png') repeat-x;
-	padding-top: 10px;
+	overflow: auto;
 }
 
 h1, h2, h3, h4 {
 	-webkit-font-smoothing: antialiased;
-	font-family: $font_headline;
 }
 
 .container {
 	max-width: 1080px;
 	margin: 0 auto;
+	.why {
+		padding: 20px 20px 50px 20px;
+	}
 }
 
 a {
 	color: $color__salmon;
 	text-decoration: none;
+	// transition: .15s linear all;
 }
 
 h1 {
@@ -31,7 +38,9 @@ h1 {
 p {
 	line-height: 1.5;
 	margin: 10px 0 20px;
-	strong { -webkit-font-smoothing: antialiased; }
+	strong {
+		-webkit-font-smoothing: antialiased;
+	}
 }
 
 .contain {
@@ -57,27 +66,50 @@ blockquote {
 	border-radius: 3px;
 	margin: 10px 0 20px;
 	padding: 10px 15px;
+	p:last-child {
+		margin: 0;
+	}
+	a {
+		color: #fff;
+	}
+}
 
-    p:last-child { margin: 0; }
-	a { color: #fff; }
+.wrapper-logo {
+	padding: 100px 0;
+	text-align: center;
+	img {
+		transform: rotate(-15deg);
+		transition: all 200ms cubic-bezier(1, 0.07, 0, 0.96);
+		opacity: 0.9;
+	}
+
+	img:hover {
+		transform: rotate(15deg);
+	}
+
+	.buttons {
+		a {
+			margin: 0 10px; 
+		}
+	}
 }
 
 .items-wrapper {
-    @include clearfix;
-    margin: 0 -15px 30px -15px;
+	@include clearfix;
+	margin: 0 -15px 30px -15px;
 }
 
 .third {
-    position: relative;
-    min-height: 1px;
-    margin-right: 15px;
-    margin-left: 15px;
-    flex-basis: 33.333333%;
+	position: relative;
+	min-height: 1px;
+	margin-right: 15px;
+	margin-left: 15px;
+	flex-basis: 33.333333%;
 }
 
 
 @media all and (max-width: 800px) {
-    .third {
-        flex-basis: 100%;
-    }
+	.third {
+			flex-basis: 100%;
+	}
 }
