@@ -2,9 +2,9 @@
 
 @section('content')
 <div class="container hero">
-  <div class="content">
+  <div class="why">
     <h1>Why auditing?</h1>
-    <p class="container why">
+    <p class="container">
         This package will help you understand changes in your Eloquent models, by providing information <br > 
         about possible discrepancies and anomalies that could indicate business concerns or suspect activities.
     </p>
