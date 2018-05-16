@@ -28,7 +28,7 @@
     </p>
   </div>
 </div>
-<div class="container">
+<div class="panel ecosystem light">
   <div class="callout rule">
     <span class="text">Features</span>
   </div>
