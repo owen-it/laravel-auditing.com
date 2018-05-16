@@ -94,6 +94,12 @@ blockquote {
 	}
 }
 
+.hero {
+	.content {
+		text-align: center;
+	}
+}
+
 .items-wrapper {
 	@include clearfix;
 	margin: 0 -15px 30px -15px;
