@@ -1,3 +1,5 @@
+
+<li class="nav-docs"><a href="/docs/{!! $currentVersion !!}/introduction" target="_blank">Documentation</a></li>
 <li class="dropdown community-dropdown">
 	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Community <span class="caret"></span></a>
 	<ul class="dropdown-menu" role="menu">
