@@ -2,11 +2,13 @@
 
 @section('content')
 <div class="container">
-  <h1>Why auditing?</h1>
-  <p class="container why">
-      This package will help you understand changes in your Eloquent models, by providing information <br > 
-      about possible discrepancies and anomalies that could indicate business concerns or suspect activities.
-  </p>
+  <div class="content">
+    <h1>Why auditing?</h1>
+    <p class="container why">
+        This package will help you understand changes in your Eloquent models, by providing information <br > 
+        about possible discrepancies and anomalies that could indicate business concerns or suspect activities.
+    </p>
+  </div>
   <div class="callout rule">
     <span class="text">Features</span>
   </div>
