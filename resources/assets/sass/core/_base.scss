@@ -20,7 +20,8 @@ h1, h2, h3, h4 {
 	max-width: 1080px;
 	margin: 0 auto;
 	.why {
-		padding: 20px 20px 50px 20px;
+		padding: 20px;
+		text-align: center;
 	}
 }
 
@@ -91,12 +92,6 @@ blockquote {
 		a {
 			margin: 0 10px; 
 		}
-	}
-}
-
-.hero {
-	.why {
-		text-align: center;
 	}
 }
 
