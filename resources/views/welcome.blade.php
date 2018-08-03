@@ -1,6 +1,21 @@
 @extends('app')
 
 @section('content')
+
+<nav id="slide-menu" class="slide-menu" role="navigation">
+
+	<div class="brand">
+		<a href="/">
+			<img src="/assets/img/laravel-logo-white.png" alt="Laravel Auditing" height="50">
+		</a>
+	</div>
+
+	<ul class="slide-main-nav">
+		@include('partials.main-nav')
+	</ul>
+
+</nav>
+
 <div class="container hero">
   <div class="why">
     <h1>Why auditing?</h1>
