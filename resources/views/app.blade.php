@@ -34,11 +34,9 @@
 				Laravel Auditing
 			</a>
 
-			@if (!Request::is('/'))
-				<div class="responsive-sidebar-nav">
-					<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
-				</div>
-			@endif
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
 
 			@if (Request::is('docs*') && isset($currentVersion))
 				@include('partials.switcher')
