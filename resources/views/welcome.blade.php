@@ -100,6 +100,16 @@
   </div>
 </div>
 
+<style>
+	.docs .slide-main-nav .nav-docs {
+		display: block;
+	}
+	
+	.slide-menu .slide-main-nav li {
+	    margin: 15px 0;
+	}
+</style>
+
 @endsection
 
 
