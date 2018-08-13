@@ -10,6 +10,7 @@
 // third party components
 @import "components/bootstrap"; // buttons + dropdowns
 @import "components/prism";     // code highlighting
+@import "components/packages";
 @import "components/slide-menu";      // sliding sidebar nav 
 
 // content components
@@ -19,6 +20,7 @@
 @import "components/panels";    // homepage blocks
 @import "components/sidebar";   // docs side nav
 @import "components/windows";   // browser + terminal containers
+@import "components/callouts";
 
 // content
 @import "content/docs";
