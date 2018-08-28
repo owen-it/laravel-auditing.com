@@ -19,7 +19,7 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<link rel="stylesheet" href="/assets/css/laravel.css">
+	<link rel="stylesheet" href="/assets/css/laravel.css?id=1">
 	<link rel="apple-touch-icon" href="/favicon.png">
 
 </head>
@@ -57,7 +57,7 @@
 		<p>The Laravel Auditing package - Copyright &copy; {!! date('Y') !!}.</p>
 	</footer>
 
-	<script src="/assets/js/laravel.js"></script>
+	<script src="/assets/js/laravel.js?id=1"></script>
 	<script src="/assets/js/viewport-units-buggyfill.js"></script>
 	<script>window.viewportUnitsBuggyfill.init();</script>
 	<script>
