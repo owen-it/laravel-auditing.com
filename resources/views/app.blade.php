@@ -18,7 +18,7 @@
 	<!--[if lte IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="/assets/css/laravel.css">
 	<link rel="apple-touch-icon" href="/favicon.png">
 
@@ -29,16 +29,14 @@
 
 	<nav class="main">
 		<div class="container">
-			<a href="/" class="brand">
+			<a href="/" class="brand" style="margin-right: 0;">
 				<img src="/assets/img/laravel-auditing-logo.png" alt="Laravel Auditing logo" style="margin-left: 15px;margin-right: 0;height: 40px;top: 14px;">
 				Laravel Auditing
 			</a>
 
-			@if (!Request::is('/'))
-				<div class="responsive-sidebar-nav">
-					<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
-				</div>
-			@endif
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
 
 			@if (Request::is('docs*') && isset($currentVersion))
 				@include('partials.switcher')
