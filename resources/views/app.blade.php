@@ -29,16 +29,14 @@
 
 	<nav class="main">
 		<div class="container">
-			<a href="/" class="brand">
+			<a href="/" class="brand" style="margin-right: 0;">
 				<img src="/assets/img/laravel-auditing-logo.png" alt="Laravel Auditing logo" style="margin-left: 15px;margin-right: 0;height: 40px;top: 14px;">
 				Laravel Auditing
 			</a>
 
-			@if (!Request::is('/'))
-				<div class="responsive-sidebar-nav">
-					<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
-				</div>
-			@endif
+			<div class="responsive-sidebar-nav">
+				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+			</div>
 
 			@if (Request::is('docs*') && isset($currentVersion))
 				@include('partials.switcher')

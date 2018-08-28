@@ -4,7 +4,7 @@
 <nav id="slide-menu" class="slide-menu" role="navigation">
 
 	<div class="brand">
-		<a href="/">
+		<a href="/" style="margin-right: 0;">
 			<img src="/assets/img/laravel-logo-white.png" height="50">
 		</a>
 	</div>
