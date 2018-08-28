@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="flattr:id" content="12ek11">
-	<title>{{ isset($title) ? $title . ' - ' : null }}Laravel Auditing</title>
+	<title>{{ isset($title) ? $title . ' - ' : null }} Laravel Auditing</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="flattr:id" content="62prjo">
 	<meta name="author" content="OwenIt">
@@ -19,7 +19,7 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="/assets/css/laravel.css">
+	<link rel="stylesheet" href="{{ mix('/assets/css/laravel.css') }}">
 	<link rel="apple-touch-icon" href="/favicon.png">
 
 </head>
@@ -59,7 +59,7 @@
 		<p>The Laravel Auditing package - Copyright &copy; {!! date('Y') !!}.</p>
 	</footer>
 
-	<script src="/assets/js/laravel.js"></script>
+	<script src="{{ mix('/assets/js/laravel.js') }}"></script>
 	<script src="/assets/js/viewport-units-buggyfill.js"></script>
 	<script>window.viewportUnitsBuggyfill.init();</script>
 	<script>
