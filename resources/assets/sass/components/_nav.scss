@@ -28,6 +28,47 @@ nav.main {
 		}
 	}
 
+	.search {
+        align-items: center;
+        float: left;
+		padding: 0 30px;
+		margin: 26px 0;
+		position: relative;
+
+        i { 
+			margin-top: 15px;
+			position: absolute;
+			left: 20px;
+			bottom: 9px;
+			color: #e7e4e4;
+		}
+
+        .twitter-typeahead {
+            height:     100%;
+            width:      100%;
+            direction:  ltr;
+            display:    inline-block;
+            position:   relative;
+
+            input {
+                display: inline-block;
+                border: none !important;
+                background: inherit;
+                flex: 1;
+                height: 100% !important;
+                &:focus { outline: none; }
+
+                &::placeholder {
+                    font-family: $font_alt;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+
+
 	ul.main-nav {
 		list-style: none;
 		display: inline-block;

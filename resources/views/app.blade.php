@@ -21,6 +21,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="/assets/css/laravel.css?id=1">
 	<link rel="apple-touch-icon" href="/favicon.png">
+	
+	<!-- at the end of the HEAD --> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" /> 
 
 </head>
 <body class="@yield('body-class', 'docs') language-php">
@@ -33,6 +36,11 @@
 				<img src="/assets/img/laravel-auditing-logo.png" alt="Laravel Auditing logo" style="margin-left: 15px;margin-right: 0;height: 40px;top: 14px;">
 				Laravel Auditing
 			</a>
+
+			<div class="search nav-block invisible">
+				<i class="fas fa-search"></i>
+				<input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
+			</div>
 
 			<div class="responsive-sidebar-nav">
 				<a href="#" class="toggle-slide menu-link btn">&#9776;</a>
@@ -56,6 +64,26 @@
 		</ul>
 		<p>The Laravel Auditing package - Copyright &copy; {!! date('Y') !!}.</p>
 	</footer>
+
+
+	<!-- at the end of the BODY --> 
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script> 
+	<script type="text/javascript"> docsearch({ 
+		apiKey: '7568f04f8dfd7cbb979379531b12d54a', 
+		indexName: 'laravel_auditing', 
+		inputSelector: '#search-input', 
+		algoliaOptions: { 'facetFilters': ["version:{{ $currentVersion }}"] }, 
+		debug: false // Set debug to true if you want to inspect the dropdown 
+	}); 
+	</script> 
+
+	<script>
+        var algolia_app_id      = '{{ Config::get('algolia.connections.main.id', false) }}';
+        var algolia_search_key  = '{{ Config::get('algolia.connections.main.search_key', false) }}';
+        var version             = '{{ isset($currentVersion) ? $currentVersion : DEFAULT_VERSION }}';
+    </script>
+
+    @include('partials.algolia_template')
 
 	<script src="/assets/js/laravel.js?id=1"></script>
 	<script src="/assets/js/viewport-units-buggyfill.js"></script>

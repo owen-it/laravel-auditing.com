@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Cache;
 /**
  * Set the default documentation version...
  */
-define('DEFAULT_VERSION', env('DEFAULT_VERSION', '2.4'));
+define('DEFAULT_VERSION', env('DEFAULT_VERSION', 'master'));
 
 /**
  * Convert some text to Markdown...

@@ -9,6 +9,11 @@
 		</a>
 	</div>
 
+				<!-- <div class="search nav-block invisible">
+					<i class="fas fa-search"></i>
+					<input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
+				</div> -->
+
 	<ul class="slide-main-nav">
 		<li><a href="/">Home</a></li>
 		@include('partials.main-nav')

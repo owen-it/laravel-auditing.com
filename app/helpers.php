@@ -19,6 +19,33 @@ if (! function_exists('file_raw_exists')) {
     }
 }
 
+if (! function_exists('svg')) {
+    /**
+     * SVG helper
+     *
+     * @param string $src Path to svg in the cp image directory
+     * @return string
+     */
+    function svg($src)
+    {
+        return file_get_contents(public_path('assets/svg/' . $src . '.svg'));
+    }
+}
+
+if (! function_exists('image')) {
+    /**
+     * image helper
+     *
+     * @param string $src Path to image in the cp image directory
+     * @return string
+     */
+    function image($src, $ext = 'png')
+    {
+        return '<img src=\"' . public_path('/assets/img/' . $src . $ext) . '"/>';
+    }
+}
+
+
 if (! function_exists('base_raw_path')) {
     /**
      * Get the path to the base of the install.
