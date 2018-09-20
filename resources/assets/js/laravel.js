@@ -7,9 +7,6 @@ require('./plugins/typeahead.js');
 require('./plugins/hogan.js'); 
 require('./plugins/mousetrap.js');
 
-const algoliasearch = require('./plugins/algoliasearch.js');
-const Hogan = require('./plugins/hogan.js');
-
 $(function() {
   if ($('.sidebar ul').length) {
     var current = $('.sidebar ul').find('li a[href="' + window.location.pathname + '"]');
@@ -19,48 +16,16 @@ $(function() {
     }
   }
 
-  // initAlgoliaSearch();
+  initAlgoliaSearch();
 
   // Fixes FOUC for the search box
   $('.search.invisible').removeClass('invisible');
 
   function initAlgoliaSearch() {
-    if (window.algolia_app_id === '') {
-      return;
-    }
-
-    var client = algoliasearch(window.algolia_app_id, window.algolia_search_key);
-    var index = client.initIndex('docs');
-
-    var templates = {
-      suggestion: Hogan.compile($('#search_suggestion_template').html()),
-      empty: Hogan.compile($('#search_empty_template').html()),
-      footer: Hogan.compile($('#search_footer_template').html())
-    };
     var $searchInput = $('#search-input');
     var $article = $('article');
 
-      // typeahead datasets
-      // https://github.com/twitter/typeahead.js/blob/master/doc/jquery_typeahead.md#datasets
     var datasets = [];
-
-    datasets.push({
-      source: function searchAlgolia(query, cb) {
-      index.search(query, {
-        hitsPerPage: 5, tagFilters: [window.version]
-      }, function searchCallback(err, content) {
-          if (err) {
-            throw err;
-          }
-          cb(content.hits)
-        });
-      },
-      templates: {
-        suggestion: templates.suggestion.render.bind(templates.suggestion),
-        empty: templates.empty.render.bind(templates.empty),
-        footer: templates.footer.render.bind(templates.footer)
-      }
-    });
 
     var typeahead = $searchInput.typeahead({hint: false}, datasets);
     var old_input = '';

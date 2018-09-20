@@ -1893,19 +1893,18 @@ nav.main .search {
           align-items: center;
   float: left;
   padding: 0 30px;
-  margin: 26px 0;
+  margin: 31px 15px 30px 15px;
   position: relative;
 }
 
 nav.main .search i {
-  margin-top: 15px;
   position: absolute;
-  left: 20px;
-  bottom: 9px;
+  left: 10px;
+  bottom: 5px;
   color: #e7e4e4;
 }
 
-nav.main .search .twitter-typeahead {
+nav.main .search .algolia-autocomplete {
   height: 100%;
   width: 100%;
   direction: ltr;
@@ -1913,9 +1912,10 @@ nav.main .search .twitter-typeahead {
   position: relative;
 }
 
-nav.main .search .twitter-typeahead input {
+nav.main .search .algolia-autocomplete input {
   display: inline-block;
   border: none !important;
+  padding: 5px;
   background: inherit;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1923,35 +1923,35 @@ nav.main .search .twitter-typeahead input {
   height: 100% !important;
 }
 
-nav.main .search .twitter-typeahead input:focus {
+nav.main .search .algolia-autocomplete input:focus {
   outline: none;
 }
 
-nav.main .search .twitter-typeahead input::-webkit-input-placeholder {
+nav.main .search .algolia-autocomplete input::-webkit-input-placeholder {
+  text-transform: uppercase;
   font-family: "Miriam Libre", sans-serif;
   font-size: 12px;
-  text-transform: uppercase;
   letter-spacing: 3px;
 }
 
-nav.main .search .twitter-typeahead input:-ms-input-placeholder {
+nav.main .search .algolia-autocomplete input:-ms-input-placeholder {
+  text-transform: uppercase;
   font-family: "Miriam Libre", sans-serif;
   font-size: 12px;
-  text-transform: uppercase;
   letter-spacing: 3px;
 }
 
-nav.main .search .twitter-typeahead input::-ms-input-placeholder {
+nav.main .search .algolia-autocomplete input::-ms-input-placeholder {
+  text-transform: uppercase;
   font-family: "Miriam Libre", sans-serif;
   font-size: 12px;
-  text-transform: uppercase;
   letter-spacing: 3px;
 }
 
-nav.main .search .twitter-typeahead input::placeholder {
+nav.main .search .algolia-autocomplete input::placeholder {
+  text-transform: uppercase;
   font-family: "Miriam Libre", sans-serif;
   font-size: 12px;
-  text-transform: uppercase;
   letter-spacing: 3px;
 }
 
@@ -2041,6 +2041,18 @@ nav.main .switcher .dropdown-menu > li > a {
 
   .docs .responsive-sidebar-nav {
     display: block;
+    position: absolute;
+    right: 15px;
+  }
+
+  .docs .switcher {
+    position: absolute !important;
+    right: 65px;
+  }
+
+  .docs nav.main .search {
+    width: 95%;
+    margin: 10px 15px;
   }
 }
 
@@ -2781,14 +2793,6 @@ nav.main .switcher .dropdown-menu > li > a {
   cursor: pointer;
 }
 
-#search-input {
-  padding: 10px 16px;
-  border-radius: 3px;
-  border: solid 1px #B3B5B4;
-  width: 100%;
-  z-index: 150;
-}
-
 .autocomplete-wrapper .h1 {
   font-size: 16px;
   font-weight: bold;
@@ -2975,13 +2979,6 @@ nav.main .switcher .dropdown-menu > li > a {
 
 .twitter-typeahead .suggestion_typehead.brand_in .keyword_in {
   color: #888;
-}
-
-.docs #search-input:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: 0;
-  border-color: #F4645F;
 }
 
 .docs-wrapper {

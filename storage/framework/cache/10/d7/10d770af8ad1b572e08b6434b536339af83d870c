@@ -1,0 +1,84 @@
+1537949173s:3141:"<h1>General Configuration</h1>
+<p>The default auditing behavior can be altered by updating the settings in the configuration file, which can be found in <code>config/audit.php</code>.</p>
+<h2>Audit implementation</h2>
+<p>Since version <strong>4.1.0</strong>, the audit implementation can be configured.</p>
+<p>By default, the package will use <code>OwenIt\Auditing\Models\Audit</code>.</p>
+<pre><code class="language-php">return [
+    // ...
+
+    'implementation' =&gt; OwenIt\Auditing\Models\Audit::class,
+
+    // ...
+];</code></pre>
+<p>Read more about it in the <a href="audit-implementation">Audit Implementation</a> section.</p>
+<h2>User</h2>
+<p>Version <strong>7.0.0</strong> brings significant changes to the <code>User</code> configuration.
+The <code>primary_key</code>, <code>foreign_key</code> and <code>model</code> are no longer necessary, giving way to <code>morph_prefix</code> and <code>guards</code>.</p>
+<h3>Morph prefix</h3>
+<p>The <code>User</code> relation has been modified from <code>BelongsTo</code> to <code>MorphTo</code>, allowing for multiple user types.
+By default, the column names used are <code>user_id</code> and <code>user_type</code>. For different column names, change the prefix value and update the <a href="audit-migration">migration</a> accordingly.</p>
+<pre><code class="language-php">return [
+    // ...
+
+    'user' = [
+        'morph_prefix' =&gt; 'user',
+    ],
+
+    // ...
+];</code></pre>
+<blockquote>
+<p>{note} The <code>Audit</code> <strong>resolveData()</strong> method will still use <code>user_id</code> and other <code>user_</code> prefixed keys for any <code>User</code> data, regardless of the morph prefix set.</p>
+</blockquote>
+<h3>Auth Guards</h3>
+<p>Specify which authentication guards the <code>UserResolver</code> should check in order to resolve a <code>User</code>.</p>
+<pre><code class="language-php">return [
+    // ...
+
+    'user' = [
+        'guards' =&gt; [
+            'web',
+            'api',
+        ],
+    ],
+
+    // ...
+];</code></pre>
+<h2>Audit driver</h2>
+<p>Being the only driver provided, the <code>Database</code> driver is set as default.</p>
+<pre><code class="language-php">return [
+    // ...
+
+    'driver' =&gt; 'database',
+
+    // ...
+];</code></pre>
+<p>The <code>Database</code> driver allows modifying:</p>
+<ul>
+<li>The database connection.</li>
+<li>The table where the <code>Audit</code> records are stored.</li>
+</ul>
+<pre><code class="language-php">return [
+    // ...
+
+    'drivers' =&gt; [
+        'database' =&gt; [
+            'table'      =&gt; 'audits',
+            'connection' =&gt; null,
+        ],
+    ],
+
+    // ...
+];</code></pre>
+<h2>Console/CLI and Jobs</h2>
+<p>Eloquent events fired from a <strong>Job</strong> or from the <strong>console</strong> (i.e. migrations, tests, commands, Tinker, ...), <strong>WILL NOT</strong> be audited by default.
+To enable console auditing, set the <code>console</code> value to <code>true</code>.</p>
+<pre><code class="language-php">return [
+    // ...
+
+    'console' =&gt; true,
+
+    // ...
+];</code></pre>
+<blockquote>
+<p>{note} Resolving a <code>User</code> in the console may not work.</p>
+</blockquote>";

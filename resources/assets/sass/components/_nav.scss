@@ -32,18 +32,17 @@ nav.main {
         align-items: center;
         float: left;
 		padding: 0 30px;
-		margin: 26px 0;
+		margin: 31px 15px 30px 15px;
 		position: relative;
 
         i { 
-			margin-top: 15px;
 			position: absolute;
-			left: 20px;
-			bottom: 9px;
+			left: 10px;
+			bottom: 5px;
 			color: #e7e4e4;
 		}
 
-        .twitter-typeahead {
+        .algolia-autocomplete {
             height:     100%;
             width:      100%;
             direction:  ltr;
@@ -52,16 +51,17 @@ nav.main {
 
             input {
                 display: inline-block;
-                border: none !important;
+				border: none !important;
+				padding: 5px;
                 background: inherit;
                 flex: 1;
                 height: 100% !important;
                 &:focus { outline: none; }
 
                 &::placeholder {
+					text-transform: uppercase;
                     font-family: $font_alt;
                     font-size: 12px;
-                    text-transform: uppercase;
                     letter-spacing: 3px;
                 }
             }
@@ -146,6 +146,19 @@ nav.main {
 
 		.responsive-sidebar-nav {
 			display: block;
+			
+			position: absolute;
+			right: 15px;
+		}
+
+		.switcher {
+			position: absolute !important;
+			right: 65px;
+		}
+
+		nav.main .search {
+			width: 95%;
+			margin: 10px 15px;
 		}
 	}
 

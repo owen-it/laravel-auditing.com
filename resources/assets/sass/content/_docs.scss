@@ -173,14 +173,6 @@
 
 }
 
-#search-input {
-	padding: 10px 16px;
-	border-radius: 3px;
-	border: solid 1px #B3B5B4;
-	width: 100%;
-	z-index: 150;
-}
-
 .autocomplete-wrapper .h1 {
 	font-size: 16px;
 	font-weight: bold;
@@ -366,12 +358,6 @@
 
 .twitter-typeahead .suggestion_typehead.brand_in .keyword_in {
 	color: #888;
-}
-
-.docs #search-input:focus {
-	box-shadow: none;
-	outline: 0;
-	border-color: #F4645F;
 }
 
 .docs-wrapper {

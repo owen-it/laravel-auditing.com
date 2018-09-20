@@ -21,8 +21,12 @@
     <h1>Why auditing?</h1>
     <p class="container">
         This package will help you understand changes in your Eloquent models, by providing information <br > 
-        about possible discrepancies and anomalies that could indicate business concerns or suspect activities.
+        about possible discrepancies and anomalies that could indicate business concerns or suspect activities. <nr>
     </p>
+
+    <a href="/docs" style="margin-top: 15px" class="btn menu-link">
+        Get Started →
+    </a>
   </div>
   <div class="callout rule">
     <span class="text">Features</span>

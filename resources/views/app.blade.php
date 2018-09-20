@@ -19,7 +19,7 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<link rel="stylesheet" href="/assets/css/laravel.css?id=1">
+	<link rel="stylesheet" href="/assets/css/laravel.css?id=9">
 	<link rel="apple-touch-icon" href="/favicon.png">
 	
 	<!-- at the end of the HEAD --> 
@@ -39,7 +39,7 @@
 
 			<div class="search nav-block invisible">
 				<i class="fas fa-search"></i>
-				<input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
+				<input placeholder="search" type="text" id="search-input" v-on:blur="reset" />
 			</div>
 
 			<div class="responsive-sidebar-nav">
@@ -85,7 +85,7 @@
 
     @include('partials.algolia_template')
 
-	<script src="/assets/js/laravel.js?id=1"></script>
+	<script src="/assets/js/laravel.js?id=5"></script>
 	<script src="/assets/js/viewport-units-buggyfill.js"></script>
 	<script>window.viewportUnitsBuggyfill.init();</script>
 	<script>
