@@ -3,8 +3,9 @@
 use ParsedownExtra;
 use App\Services\CustomParser;
 use App\Services\Documentation;
-use Vinkla\Algolia\AlgoliaManager;
 use Illuminate\Filesystem\Filesystem;
+
+use Algolia\AlgoliaSearch\SearchClient;
 
 class Indexer
 {
@@ -78,7 +79,7 @@ class Indexer
      * @param  Filesystem  $files
      * @return void
      */
-    public function __construct(AlgoliaManager $client, CustomParser $markdown, Filesystem $files)
+    public function __construct(SearchClient $client, CustomParser $markdown, Filesystem $files)
     {
         $this->files = $files;
         $this->client = $client;
