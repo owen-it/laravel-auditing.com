@@ -1,4 +1,6 @@
-<?php namespace App\Http\Controllers;
+<?php
+
+namespace App\Http\Controllers;
 
 use App\Services\Documentation;
 use Symfony\Component\DomCrawler\Crawler;
