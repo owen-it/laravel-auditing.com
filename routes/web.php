@@ -16,7 +16,7 @@ use App\Http\Controllers\DocsController;
 |
 */
 
-define('DEFAULT_VERSION', env('DEFAULT_VERSION', 'master'));
+define('DEFAULT_VERSION', env('DEFAULT_VERSION', 'main'));
 
 /**
  * Convert some text to Markdown...
