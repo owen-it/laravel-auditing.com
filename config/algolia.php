@@ -14,7 +14,7 @@ return [
     'connections' => [
         'main' => [
             'id' => 'laravel_auditing',
-            'search_key' => '8e1d446d61fce359f69cd7c8b86a50de',
+            'search_key' => env('ALGOLIA_SEARCH_KEY', ''),
             'key' => env('ALGOLIA_ADMIN_KEY', ''),
         ],
     ],
