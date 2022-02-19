@@ -54,7 +54,7 @@ class DocsController extends Controller {
 	public function show($version, $page = null)
 	{
 		if ( ! $this->isVersion($version)) {
-			return redirect('docs/'.DEFAULT_VERSION.'/'.$version, 301);
+			return redirect('docs/'.DEFAULT_VERSION, 301);
 		}
 		
 		if (! defined('CURRENT_VERSION')) {
