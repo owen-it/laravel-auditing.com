@@ -107,7 +107,7 @@ class Documentation {
 	public static function getDocVersions()
 	{
 		return [
-			'master' => 'Main',
+			'main' => 'Main',
 			'13.0' => '13.0 Beta',
 			'12.0' => '12.0',
 			'10.0' => '10.0',

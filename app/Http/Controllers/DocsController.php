@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Services\Documentation;
+use App\Services\Documentation\Indexer;
 use Symfony\Component\DomCrawler\Crawler;
 
 class DocsController extends Controller {
@@ -20,9 +21,10 @@ class DocsController extends Controller {
 	 * @param  Documentation  $docs
 	 * @return void
 	 */
-	public function __construct(Documentation $docs)
+	public function __construct(Documentation $docs, Indexer $indexer)
 	{
 		$this->docs = $docs;
+		$this->indexer = $indexer;
 	}
 
 	/**
@@ -107,5 +109,12 @@ class DocsController extends Controller {
 	protected function isVersion($version)
 	{
 		return in_array($version, array_keys(Documentation::getDocVersions()));
+	}
+
+	/**
+	 * Update all documentation
+	 */
+	public function updateIndexes () {
+		$this->indexer->indexAllDocuments();
 	}
 }

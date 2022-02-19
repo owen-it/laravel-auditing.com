@@ -5,7 +5,7 @@ use App\Services\CustomParser;
 use App\Services\Documentation;
 use Illuminate\Filesystem\Filesystem;
 
-use Algolia\AlgoliaSearch\SearchClient;
+use  Algolia\ScoutExtended\Algolia;
 
 class Indexer
 {
@@ -79,12 +79,12 @@ class Indexer
      * @param  Filesystem  $files
      * @return void
      */
-    public function __construct(SearchClient $client, CustomParser $markdown, Filesystem $files)
+    public function __construct(Algolia $client, CustomParser $markdown, Filesystem $files)
     {
         $this->files = $files;
-        $this->client = $client;
+        $this->client = $client->client();
         $this->markdown = $markdown;
-        $this->index = $client->initIndex(static::$index_name.'_tmp');
+        $this->index = $this->client->initIndex(static::$index_name.'_tmp');
     }
 
     /**
@@ -176,7 +176,7 @@ class Indexer
             }
         }
 
-        $this->index->addObjects($markup);
+        $this->index->saveObjects($markup);
 
         echo "Indexed $version.$slug" . PHP_EOL;
     }

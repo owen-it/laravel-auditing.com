@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Artisan;
 
 use App\Http\Controllers\DocsController;
 
@@ -16,7 +17,7 @@ use App\Http\Controllers\DocsController;
 |
 */
 
-define('DEFAULT_VERSION', env('DEFAULT_VERSION', 'master'));
+define('DEFAULT_VERSION', env('DEFAULT_VERSION', 'main'));
 
 /**
  * Convert some text to Markdown...
@@ -25,6 +26,7 @@ function markdown($text) {
 	return (new ParsedownExtra)->text($text);
 }
 
+Route::get('indexes', [DocsController::class, 'updateIndexes'] );
 Route::get('/flush/{version?}', function($version = null) {
 
 	Artisan::call('view:clear');
