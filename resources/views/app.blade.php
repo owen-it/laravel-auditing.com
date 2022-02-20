@@ -25,6 +25,8 @@
 
 	<!-- at the end of the HEAD -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha" />
+
+	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 
 <body class="@yield('body-class', 'docs') language-php">

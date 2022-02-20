@@ -33,7 +33,7 @@ class Indexer
     /**
      * The Parsedown parser instance.
      *
-     * @var ParsedownExtra
+     * @var CustomParser
      */
     protected $markdown;
 
