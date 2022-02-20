@@ -189,7 +189,7 @@
                 </svg>
             </div>
             <div class="absolute -bottom-10 left-5 pointer-events-none md:left-[35%]">
-                <svg class="text-gray-300 animate-delay-4s animate-cube" width="26" height="33" viewBox="0 0 46 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="text-gray-300 animate-cube" width="26" height="33" viewBox="0 0 46 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="m23.102 1 22.1 12.704v25.404M23.101 1l-22.1 12.704v25.404" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel"></path>
                     <path d="m45.202 39.105-22.1 12.702L1 39.105" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel"></path>
                     <path transform="matrix(.86698 .49834 .00003 1 1 13.699)" stroke="currentColor" stroke-width="1.435" stroke-linejoin="bevel" d="M0 0h25.491v25.405H0z"></path>
