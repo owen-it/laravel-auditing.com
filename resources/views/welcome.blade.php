@@ -209,7 +209,7 @@
                     about possible discrepancies and anomalies that could indicate business concerns or suspect activities. <nr>
                 </p>
 
-                <a href="/docs/{{ DEFAULT_VERSION }}" style="margin-top: 15px" class="btn menu-link">
+                <a href="/docs/{{ DEFAULT_VERSION }}/introduction" style="margin-top: 15px" class="btn menu-link">
                     Get Started →
                 </a>
             </div>
