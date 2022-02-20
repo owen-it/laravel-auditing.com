@@ -204,7 +204,7 @@
                     about possible discrepancies and anomalies that could indicate business concerns or suspect activities. <nr>
                 </p>
 
-                <a href="/docs" style="margin-top: 15px" class="btn menu-link">
+                <a href="/docs/{{ DEFAULT_VERSION }}" style="margin-top: 15px" class="btn menu-link">
                     Get Started →
                 </a>
             </div>
@@ -223,7 +223,7 @@
                         </g>
                     </svg></div>
                 <div class="content">
-                    <a href="/docs/auditor" class="package-title">Auditor</a>
+                    <a href="/docs/{{ DEFAULT_VERSION }}/auditor" class="package-title">Auditor</a>
                     <p>The Auditor class is responsible for auditing and clearing Audit records.</p>
                 </div>
             </div>
@@ -235,7 +235,7 @@
                         </g>
                     </svg></div>
                 <div class="content">
-                    <a href="/docs/audit-redactors" class="package-title">Redactors</a>
+                    <a href="/docs/{{ DEFAULT_VERSION }}/audit-redactors" class="package-title">Redactors</a>
                     <p>Redactors were introduced in version 6.1.0, and are an easy way to mask sensitive information when auditing.</p>
                 </div>
             </div>
@@ -247,7 +247,7 @@
                         </g>
                     </svg></div>
                 <div class="content">
-                    <a href="/docs/audit-presentation" class="package-title">Presentation</a>
+                    <a href="/docs/{{ DEFAULT_VERSION }}/audit-presentation" class="package-title">Presentation</a>
                     <p>The metadata and modified data can be accessed in several ways..</p>
                 </div>
             </div>
@@ -261,7 +261,7 @@
                         </g>
                     </svg></div>
                 <div class="content">
-                    <a href="/docs/audit-resolvers" class="package-title">Resolvers</a>
+                    <a href="/docs/{{ DEFAULT_VERSION }}/audit-resolvers" class="package-title">Resolvers</a>
                     <p>Resolvers provide a convenient way to get the basic data for audit.</p>
                 </div>
             </div>
@@ -273,7 +273,7 @@
                         </g>
                     </svg></div>
                 <div class="content">
-                    <a href="/docs/audit-resolvers" class="package-title">Drivers</a>
+                    <a href="/docs/{{ DEFAULT_VERSION }}/audit-resolvers" class="package-title">Drivers</a>
                     <p>Besides storing model attribute changes, drivers also handle pruning when an audit threshold is set.</p>
                 </div>
             </div>
@@ -285,7 +285,7 @@
                         </g>
                     </svg></div>
                 <div class="content">
-                    <a href="/docs/audit-transformation" class="package-title">Transformation</a>
+                    <a href="/docs/{{ DEFAULT_VERSION }}/audit-transformation" class="package-title">Transformation</a>
                     <p>If needed, the Audit data can be transformed before being stored.</p>
                 </div>
             </div>
@@ -299,7 +299,7 @@
                         </g>
                     </svg></div>
                 <div class="content">
-                    <a href="/docs/audit-tags" class="package-title">Tags</a>
+                    <a href="/docs/{{ DEFAULT_VERSION }}/audit-tags" class="package-title">Tags</a>
                     <p>Tags mark audit logs and are very useful for filtering..</p>
                 </div>
             </div>
@@ -311,7 +311,7 @@
                         </g>
                     </svg></div>
                 <div class="content">
-                    <a href="/docs/audit-events" class="package-title">Events</a>
+                    <a href="/docs/{{ DEFAULT_VERSION }}/audit-events" class="package-title">Events</a>
                     <p>During and after the audit process, two events are fired. </p>
                 </div>
             </div>
@@ -323,7 +323,7 @@
                         </g>
                     </svg></div>
                 <div class="content">
-                    <a href="/docs/auditable-transition" class="package-title">Transition</a>
+                    <a href="/docs/{{ DEFAULT_VERSION }}/auditable-transition" class="package-title">Transition</a>
                     <p>Ability use an Audit record to transition between the states of an Auditable model. </p>
                 </div>
             </div>
