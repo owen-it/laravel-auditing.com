@@ -26,7 +26,6 @@ function markdown($text) {
 	return (new ParsedownExtra)->text($text);
 }
 
-Route::get('indexes', [DocsController::class, 'updateIndexes'] );
 Route::get('/flush/{version?}', function($version = null) {
 
 	Artisan::call('view:clear');
@@ -51,6 +50,7 @@ Route::get('/flush/{version?}', function($version = null) {
 	return redirect('docs/'.DEFAULT_VERSION);
 });
 
-Route::get('/', [DocsController::class, 'showWelcomePage'] );
+Route::get('', [DocsController::class, 'showWelcomePage'] );
 Route::get('docs', [DocsController::class, 'showRootPage'] );
 Route::get('docs/{version}/{page?}', [DocsController::class, 'show'] );
+Route::get('{target}', [DocsController::class, 'showTargetPage'] );

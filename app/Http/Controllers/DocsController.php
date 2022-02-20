@@ -38,6 +38,16 @@ class DocsController extends Controller {
 	}
 
 	/**
+	 * Redirect to target page.
+	 *
+	 * @return Response
+	 */
+	public function showTargetPage($target) {
+		return redirect('docs/'.DEFAULT_VERSION.'/'.$target);
+	}
+
+
+	/**
 	 * Show the welcome documentation page (/welcome).
 	 *
 	 * @return Response

@@ -248,9 +248,17 @@ class Indexer
             'h3'            => $current_h3,
             'h4'            => $current_h4,
             'link'          => $current_link,
-            'content'       => $isContent ? $element['text'] : null,
+            'url'          => $current_link,
+            'content'       => $isContent ? $element['text'] : $current_h1,
             'importance'    => $importance,
-            '_tags'         => [$version]
+            'version'       => $version,
+            'type' =>  "lvl1",
+            'hierarchy'     => [
+                'lvl1' => $current_h1,
+                'lvl2' => $current_h2,
+                'lvl3' => $current_h3,
+                'lvl4' => $current_h4,
+            ]
         ];
     }
 
@@ -263,8 +271,11 @@ class Indexer
     {
         $this->index->setSettings([
             'attributesToIndex'         => ['unordered(h1)', 'unordered(h2)', 'unordered(h3)', 'unordered(h4)', 'unordered(content)'],
-            'attributesToHighlight'     => ['h1', 'h2', 'h3', 'h4', 'content'],
-            'attributesToRetrieve'      => ['h1', 'h2', 'h3', 'h4', '_tags', 'link'],
+            'attributesToHighlight'     => ['h1', 'h2', 'h3', 'h4', 'content', 'hierarchy'],
+            'attributesToRetrieve'      => [
+                'h1', 'h2', 'h3', 'h4', 'url', 'version', 'content', 'hierarchy', 'importance',
+            ],
+            'attributesForFaceting'     => ['version'],
             'customRanking'             => ['asc(importance)'],
             'ranking'                   => ['words', 'typo', 'attribute', 'proximity', 'exact', 'custom'],
             'minWordSizefor1Typo'       => 3,

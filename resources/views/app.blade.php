@@ -78,7 +78,7 @@
 			indexName: 'prod_laravel_auditing',
 			apiKey: '215922eeb1e2b17767f91dbb38d9e70b',
 			searchParameters: {
-				facetFilters: ['language:en', 'version:{{ $currentVersion }}'],
+				facetFilters: ['version:{{ isset($currentVersion) ? $currentVersion : DEFAULT_VERSION }}'],
 			},
 		});
 	</script>
@@ -130,9 +130,7 @@
 
 	<script src="/assets/js/app.js?id=5"></script>
 	<script src="/assets/js/viewport-units-buggyfill.js"></script>
-	<script>
-		window.viewportUnitsBuggyfill.init();
-	</script>
+
 	<script>
 		(function(i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r;

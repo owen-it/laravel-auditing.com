@@ -19,8 +19,6 @@
         "sass-loader": "^12.6.0"
     },
     "dependencies": {
-        "@docsearch/css": "^3.0.0-alpha.50",
-        "@docsearch/js": "^3.0.0-alpha.50",
         "bootstrap-sass": "^3.4.1"
     }
 }
