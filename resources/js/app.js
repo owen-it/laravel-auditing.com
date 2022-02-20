@@ -7,7 +7,9 @@ require('./plugins/bootstrap.js');
 require('./plugins/scotchPanels.js'); 
 require('./plugins/typeahead.js'); 
 require('./plugins/hogan.js'); 
+require('./plugins/algoliasearch.js'); 
 require('./plugins/mousetrap.js');
+
 
 $(function() {
   if ($('.sidebar ul').length) {
