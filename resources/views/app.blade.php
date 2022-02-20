@@ -64,7 +64,7 @@
 		<ul>
 			@include('partials.main-nav')
 		</ul>
-		<p>The Laravel Auditing package - Copyright &copy; {!! date('Y') !!}.</p>
+		<p class="text-gray-300">The Laravel Auditing package - Copyright &copy; {!! date('Y') !!}.</p>
 	</footer>
 
 

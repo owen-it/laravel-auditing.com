@@ -156,6 +156,11 @@
   -webkit-animation-delay: 4s;
   animation-delay: 4s;
 }
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgba(209, 213, 219, var(--tw-text-opacity));
+}
 </style>
 
 <div class="container hero">
@@ -312,7 +317,7 @@
                     </svg></div>
                 <div class="content">
                     <a href="/docs/{{ DEFAULT_VERSION }}/audit-events" class="package-title">Events</a>
-                    <p>During and after the audit process, two events are fired. </p>
+                    <p>Auditing's events provide a simple observer pattern implementation, allowing you to subscribe and listen to the audit events.</p>
                 </div>
             </div>
             <div class="package last">
