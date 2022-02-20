@@ -68,9 +68,10 @@
 
 	<!-- at the end of the BODY --> 
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script> 
-	<script type="text/javascript"> docsearch({ 
-		apiKey: '7568f04f8dfd7cbb979379531b12d54a', 
-		indexName: 'laravel_auditing', 
+	<script type="text/javascript"> docsearch({
+		appId: '{{ Config::get('algolia.connections.main.id') }}',
+		apiKey: '{{ Config::get('algolia.connections.main.search_key') }}', 
+		indexName: '{{ Config::get('algolia.connections.main.index_name') }}', 
 		inputSelector: '#search-input', 
 		algoliaOptions: { 'facetFilters': ["version:{{ $currentVersion }}"] }, 
 		debug: false // Set debug to true if you want to inspect the dropdown 
@@ -78,8 +79,9 @@
 	</script> 
 
 	<script>
-        var algolia_app_id      = '{{ Config::get('algolia.connections.main.id', false) }}';
-        var algolia_search_key  = '{{ Config::get('algolia.connections.main.search_key', false) }}';
+        var algolia_app_id      = '{{ Config::get('algolia.connections.main.id') }}';
+        var algolia_search_key  = '{{ Config::get('algolia.connections.main.search_key') }}';
+		var algolia_index_nane  = '{{ Config::get('algolia.connections.main.index_name') }}';
         var version             = '{{ isset($currentVersion) ? $currentVersion : DEFAULT_VERSION }}';
     </script>
 
