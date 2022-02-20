@@ -14,6 +14,18 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 
+use App\Services\Documentation\Indexer;
+
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');
+
+Artisan::command('docs', function (Indexer $indexer) {
+    $indexer->indexAllDocuments([
+        'main' => 'main',
+        '13.0' => '13.0',
+        '12.0' => '12.0',
+        '9.0' => '9.0'
+    ]);
+    $this->comment('All documentation has been indexed.');
+})->purpose('Generate docs indexes to algolia');

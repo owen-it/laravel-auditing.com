@@ -14,7 +14,7 @@ class Indexer
      *
      * @var string
      */
-    protected static $index_name = 'docs';
+    protected static $index_name = 'prod_laravel_auditing';
 
     /**
      * The Algolia Index instance.
@@ -92,15 +92,15 @@ class Indexer
      *
      * @return void
      */
-    public function indexAllDocuments()
+    public function indexAllDocuments($versions)
     {
-        foreach (Documentation::getDocVersions() as $key => $title) {
+        foreach ($versions as $key => $title) {
             $this->indexAllDocumentsForVersion($key);
         }
 
         $this->setSettings();
 
-        $this->client->moveIndex($this->index->indexName, static::$index_name);
+        $this->client->moveIndex($this->index->getIndexName(), static::$index_name);
     }
 
     /**
