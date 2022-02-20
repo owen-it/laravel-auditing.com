@@ -19,14 +19,13 @@
 	<!--[if lte IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="/assets/css/app.css?id=9">
 	<link rel="apple-touch-icon" href="/favicon.png">
 
 	<!-- at the end of the HEAD -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha" />
 
-	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+	<script src="https://kit.fontawesome.com/a1bc95ab65.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="@yield('body-class', 'docs') language-php">
