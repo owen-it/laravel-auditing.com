@@ -241,7 +241,7 @@
                     </svg></div>
                 <div class="content">
                     <a href="/docs/{{ DEFAULT_VERSION }}/attribute-modifiers" class="package-title">Modifiers</a>
-                    <p>Allows you to modify attributes before being audited. Sensitive data can be omitted here.</p>
+                    <p>Allows you to modify attributes before being audited. Sensitive data can be omitted or modified using this feature.</p>
                 </div>
             </div>
             <div class="package">
