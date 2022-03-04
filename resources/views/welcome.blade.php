@@ -240,8 +240,8 @@
                         </g>
                     </svg></div>
                 <div class="content">
-                    <a href="/docs/{{ DEFAULT_VERSION }}/audit-redactors" class="package-title">Redactors</a>
-                    <p>Redactors were introduced in version 6.1.0, and are an easy way to mask sensitive information when auditing.</p>
+                    <a href="/docs/{{ DEFAULT_VERSION }}/attribute-modifiers" class="package-title">Modifiers</a>
+                    <p>Allows you to modify attributes before being audited. Sensitive data can be omitted here.</p>
                 </div>
             </div>
             <div class="package">
