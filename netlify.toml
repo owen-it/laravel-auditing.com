@@ -1,0 +1,19 @@
+[build.environment]
+  NPM_FLAGS = "--version"
+  NODE_OPTIONS = "--max_old_space_size=4096"
+  NODE_VERSION = "16"
+
+[build]
+  publish = "docs/.vitepress/dist"
+  command = "yarn && yarn docs:build"
+
+[[redirects]]
+  from = "https://laravel-auditing.com/*"
+  to = "https://laravel-auditing.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

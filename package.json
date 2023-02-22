@@ -1,24 +1,23 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "npm run development",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "prod": "npm run production",
-        "production": "mix --production"
-    },
-    "devDependencies": {
-        "axios": "^0.21",
-        "laravel-mix": "^6.0.6",
-        "lodash": "^4.17.19",
-        "postcss": "^8.1.14",
-        "resolve-url-loader": "^5.0.0",
-        "sass": "^1.49.8",
-        "sass-loader": "^12.6.0"
-    },
-    "dependencies": {
-        "bootstrap-sass": "^3.4.1"
-    }
+  "name": "laravel-auditing-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss-import": "^15.1.0",
+    "vitepress": "^1.0.0-alpha.47",
+    "tailwindcss": "^3.2.7",
+    "postcss": "^8.4.21",
+    "vue": "^3.2.47"
+  },
+  "dependencies": {
+    "@iconify/vue": "^4.1.0",
+    "floating-vue": "^2.0.0-beta.20"
+  }
 }
