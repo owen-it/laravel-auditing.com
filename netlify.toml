@@ -7,12 +7,6 @@
   command = "yarn && yarn docs:build"
 
 [[redirects]]
-  from = "https://docs.laravel-auditing.com/*"
-  to = "https://laravel-auditing.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
