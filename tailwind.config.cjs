@@ -71,6 +71,18 @@ module.exports = {
       transitionProperty: {
         border: 'border',
       },
+
+      animation: {
+        stamp: 'stamp 0.5s forwards',
+      },
+
+      keyframes: {
+        stamp: {
+          '0%': { transform: 'translateY(100px) scale(0) rotate(0deg)' },
+          '50%': { transform: 'translateY(0) scale(1.2) rotate(10deg)' },
+          '100%': { transform: 'translateY(0) scale(1) rotate(15deg)' },
+        }
+      }
     },
   },
   content: [
