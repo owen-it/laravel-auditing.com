@@ -50,3 +50,25 @@ features:
     details: Ability use an Audit record to transition between the states of an Auditable model.
 
 ---
+
+<hr class="border-0 border-t border-gray-500 opacity-10 my-24" />
+
+<div class="container mx-auto">
+  <h2>
+    Meet the team
+  </h2>
+
+  <MeetTeam class="mb-24" />
+
+  <h2>
+    Sponsors
+  </h2>
+
+  <SponsorsGroup />
+</div>
+
+<style lang="postcss" scoped>
+h2 {
+  @apply text-center text-2xl md:text-3xl;
+}
+</style>

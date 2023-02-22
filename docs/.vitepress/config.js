@@ -47,6 +47,7 @@ const guidesNav = [
   },
   {
     text: 'Advanced',
+    collapsed: false,
     items: [
       {
         text: 'Audit Migration',

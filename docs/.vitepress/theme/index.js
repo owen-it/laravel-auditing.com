@@ -4,8 +4,8 @@ import { Icon } from '@iconify/vue'
 import 'floating-vue/dist/style.css'
 import './style/vars.pcss'
 import './style/index.pcss'
-import SponsorButton from './SponsorButton.vue'
 import MeetTeam from './MeetTeam.vue'
+import SponsorsGroup from './SponsorsGroup.vue'
 
 export default {
   ...DefaultTheme,
@@ -18,7 +18,7 @@ export default {
       },
     })
     app.component('Icon', Icon)
-    app.component('SponsorButton', SponsorButton)
     app.component('MeetTeam', MeetTeam)
+    app.component('SponsorsGroup', SponsorsGroup)
   },
 }

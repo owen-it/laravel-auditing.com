@@ -11,14 +11,6 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: 'Antério Vieira',
-    avatar: 'https://avatars.githubusercontent.com/u/1490347?v=4',
-    description: 'A tech enthusiast',
-    github: 'https://github.com/anteriovieira',
-    twitter: 'https://twitter.com/anteriovieira',
-    sponsor: 'https://github.com/sponsors/anteriovieira',
-  },
-  {
     name: 'Raphael França',
     avatar: 'https://media.licdn.com/dms/image/D4D03AQFtdrtFC1KV9A/profile-displayphoto-shrink_800_800/0/1675116199496?e=1682553600&v=beta&t=DV1f7mKJx2PhdkpLyJo2WbbluQs8ZFi6DfSoCE-ceU4',
     description: 'Web Server, and Cloud Computing',
@@ -26,16 +18,32 @@ const teamMembers: TeamMember[] = [
     linkedin: 'https://www.linkedin.com/in/raphaelofranca/',
     sponsor: 'https://github.com/sponsors/raphaelfranca',
   },
+  {
+    name: 'Antério Vieira',
+    avatar: 'https://avatars.githubusercontent.com/u/1490347?v=4',
+    description: 'Curious mind always exploring the latest tech',
+    github: 'https://github.com/anteriovieira',
+    twitter: 'https://twitter.com/anteriovieira',
+    sponsor: 'https://github.com/sponsors/anteriovieira',
+  },
+  {
+    name: 'Morten D. Hansen',
+    avatar: 'https://avatars.githubusercontent.com/u/5455310?v=4',
+    description: 'PHP developer and system architecture enthusiast',
+    github: 'https://github.com/MortenDHansen',
+    twitter: 'https://twitter.com/MortenDHansen',
+    sponsor: 'https://github.com/sponsors/MortenDHansen',
+  },
 ]
 </script>
 
 <template>
   <div class="my-12 flex flex-col items-stretch gap-12">
-    <div class="grid gap-4 md:grid-cols-2 w-full max-w-[500px] mx-auto">
+    <div class="grid gap-6 md:grid-cols-3 mx-auto justify-center">
       <div
         v-for="(tm, index) of teamMembers"
         :key="index"
-        class="flex flex-col items-center gap-2 text-center"
+        class="flex flex-col items-center gap-2 text-center mb-10"
       >
         <img
           :src="tm.avatar"
@@ -49,7 +57,7 @@ const teamMembers: TeamMember[] = [
           </div>
 
           <div
-            class="text-gray-500 whitespace-pre"
+            class="text-gray-500 max-w-60 mb-4"
             v-text="tm.description"
           />
         </div>
