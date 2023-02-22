@@ -1,3 +1,6 @@
+import { defineConfig } from 'vitepress'
+import { withPwa } from '@vite-pwa/vitepress'
+
 const guidesNav = [
   {
     text: 'Essentials',
@@ -139,7 +142,7 @@ const versionsNav = [
   }
 ]
 
-module.exports = {
+module.exports = withPwa(defineConfig({
   title: 'Laravel Auditing',
   description: 'Laravel Auditing allows you to record changes to an Eloquent model\'s set of data by simply adding its trait to your model.',
   
@@ -244,4 +247,4 @@ module.exports = {
       indexName: 'prod_laravel_auditing',
     },
   },
-}
+}))
