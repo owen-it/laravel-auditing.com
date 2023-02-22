@@ -9,7 +9,7 @@ composer require owen-it/laravel-auditing
 > {tip} This package supports **Laravel** and **Lumen** from version 5.2 onward.
 
 # Upgrading
-If you're [upgrading](upgrading), make sure the `audits` table schema is up to date!
+If you're [upgrading](upgrading.md), make sure the `audits` table schema is up to date!
 
 > {tip} Changes to the table schema are needed when upgrading from any of the previous versions!
 
@@ -83,7 +83,7 @@ php artisan vendor:publish --provider "OwenIt\Auditing\AuditingServiceProvider" 
 
 This will create the `config/audit.php` configuration file.
 
-You can read more about the configuration options in the [General Configuration](general-configuration) section.
+You can read more about the configuration options in the [General Configuration](general-configuration.md) section.
 
 Lumen by default doesn't read from `config` location. Make sure to load the configuration on boot. Edit the `bootstrap/app.php`:
 

@@ -16,7 +16,7 @@ return [
 ];
 ```
 
-Read more about it in the [Audit Implementation](audit-implementation) section.
+Read more about it in the [Audit Implementation](audit-implementation.md) section.
 
 ## User
 Version **7.0.0** brings significant changes to the `User` configuration.

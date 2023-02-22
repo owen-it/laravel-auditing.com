@@ -116,6 +116,29 @@ const communityNav = [
   },
 ]
 
+const currentVersion = 'v13.0'
+const versionsNav = [
+  {
+    text: 'Changelog',
+    link: 'https://github.com/owen-it/laravel-auditing/blob/master/CHANGELOG.md',
+  },
+  {
+    text: 'Release Notes',
+    link: 'https://github.com/owen-it/laravel-auditing/releases',
+  },
+  {
+    text: 'Versions',
+    items: [
+      { text: 'v13.0', link: 'https://github.com/owen-it/laravel-auditing-doc/tree/13.0' },
+      { text: 'v12.0', link: 'https://github.com/owen-it/laravel-auditing-doc/tree/12.0' },
+    ].map((item) => 
+      item.text === currentVersion
+        ? { text: `${item.text} (Current)`, link: '/', activeMatch: '/' }
+        : item
+    )
+  }
+]
+
 module.exports = {
   title: 'Laravel Auditing',
   description: 'Laravel Auditing allows you to record changes to an Eloquent model\'s set of data by simply adding its trait to your model.',
@@ -161,10 +184,6 @@ module.exports = {
         items: communityNav,
       },
       {
-        text: 'Changelog',
-        link: 'https://github.com/owen-it/laravel-auditing/blob/master/CHANGELOG.md',
-      },
-      {
         text: 'Sponsor',
         items: [
           {
@@ -176,6 +195,10 @@ module.exports = {
             link: 'https://github.com/sponsors/raphaelfranca',
           },
         ],
+      },
+      {
+        text: currentVersion,
+        items: versionsNav,
       },
     ],
 
