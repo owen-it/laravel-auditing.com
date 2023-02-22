@@ -5,8 +5,3 @@
 [build]
   publish = "docs/.vitepress/dist"
   command = "yarn && yarn docs:build"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
