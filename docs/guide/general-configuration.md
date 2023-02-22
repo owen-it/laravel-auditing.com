@@ -38,7 +38,9 @@ return [
 ];
 ```
 
-> {note} The `Audit` **resolveData()** method will still use `user_id` and other `user_` prefixed keys for any `User` data, regardless of the morph prefix set.
+::: info 
+The `Audit` **resolveData()** method will still use `user_id` and other `user_` prefixed keys for any `User` data, regardless of the morph prefix set.
+:::
 
 ### Auth Guards
 Specify which authentication guards the `UserResolver` should check in order to resolve a `User`.
@@ -105,4 +107,6 @@ return [
 ];
 ```
 
-> {note} Resolving a `User` in the console may not work.
+::: info 
+Resolving a `User` in the console may not work.
+:::

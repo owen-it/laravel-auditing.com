@@ -27,7 +27,9 @@ $audit = $article->audits()->find(4);
 $all = $article->audits()->with('user')->get();
 ```
 
-> {tip} Remember to properly set the `User` **morph_prefix** and **guards** in the `config/audit.php` file.
+::: tip 
+Remember to properly set the `User` **morph_prefix** and **guards** in the `config/audit.php` file.
+:::
 
 ## Getting the Audit metadata
 Retrieve an `array` with the `Audit` metadata.
@@ -102,4 +104,6 @@ array(2) {
 }
 ```
 
-> {note} By default, `Audit` records will be sorted by `created_at` in ascending order (oldest to newest).
+::: info 
+By default, `Audit` records will be sorted by `created_at` in ascending order (oldest to newest).
+:::

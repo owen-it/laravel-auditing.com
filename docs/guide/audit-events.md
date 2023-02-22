@@ -68,4 +68,6 @@ class AuditedListener
 }
 ```
 
-> {tip} For more information about events, check Laravel's official [documentation](https://laravel.com/docs/master/events)!
+::: tip 
+For more information about events, check Laravel's official [documentation](https://laravel.com/docs/master/events)!
+:::

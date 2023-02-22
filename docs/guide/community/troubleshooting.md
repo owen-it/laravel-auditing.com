@@ -28,7 +28,9 @@ Please refer to the [General Configuration](general-configuration.md) for more i
 False positives cause Audit records to be created.
 This happens when a model with boolean/date attributes gets updated, regardless of change in those attributes.
 
-> {tip} This behaviour has been [fixed](https://github.com/laravel/framework/pull/18400) in Laravel 5.5+, but it's still present in older versions. 
+::: tip 
+This behaviour has been [fixed](https://github.com/laravel/framework/pull/18400) in Laravel 5.5+, but it's still present in older versions. 
+:::
 
 The internal data of the Eloquent model will be as follows:
 
@@ -44,7 +46,9 @@ In the **$original** array attribute:
 
 This makes the `getDirty()` and `isDirty()` methods to consider wrongful attribute changes when comparing data.
 
-> {tip} For Laravel versions prior to 5.5, use this [trait](https://gist.github.com/crashkonijn/7d581e55770d2379494067d8b0ce0f6d), courtesy of [Peter Klooster](https://github.com/crashkonijn)! 
+::: tip 
+For Laravel versions prior to 5.5, use this [trait](https://gist.github.com/crashkonijn/7d581e55770d2379494067d8b0ce0f6d), courtesy of [Peter Klooster](https://github.com/crashkonijn)! 
+:::
 
 Other discussions about this [subject](https://github.com/laravel/internals/issues/349).
 
@@ -70,7 +74,9 @@ Audit::creating(function (Audit $model) {
 });
 ```
 
-> {note} Keep in mind that the `old_values` and `new_values` of a `retrieved` event, will always be empty!
+::: info 
+Keep in mind that the `old_values` and `new_values` of a `retrieved` event, will always be empty!
+:::
 
 ## PHP Fatal error:  Maximum function nesting level of '512' reached, aborting!
 This error happens when an `Audit` is being created for a `retrieved` event on a `User` model.
@@ -114,7 +120,9 @@ protected $casts = [
 ];
 ```
 
-> {note} From version **8.0.3**, the `Audit` model now includes the `auditable_id` in the `$casts` property, defaulting to `integer`. Change it to `string` if you are using UUID.
+::: info 
+From version **8.0.3**, the `Audit` model now includes the `auditable_id` in the `$casts` property, defaulting to `integer`. Change it to `string` if you are using UUID.
+:::
 
 A description of this issue can be found [here](https://github.com/owen-it/laravel-auditing/issues/432#issuecomment-424738978).
 
@@ -141,4 +149,6 @@ public function user()
 }
 ```
 
-> {tip} A custom `Audit` model needs to be created with the above methods. Don't forget to update the `Audit` implementation in your configuration!
+::: tip 
+A custom `Audit` model needs to be created with the above methods. Don't forget to update the `Audit` implementation in your configuration!
+:::

@@ -214,4 +214,6 @@ return [
     // ...
 ];
 ```
-> {tip} The resolved `User` should implement the `Illuminate\Contracts\Auth\Authenticatable` interface, or at least have a `getAuthIdentifier()` method that returns the `id`.
+::: tip 
+The resolved `User` should implement the `Illuminate\Contracts\Auth\Authenticatable` interface, or at least have a `getAuthIdentifier()` method that returns the `id`.
+:::

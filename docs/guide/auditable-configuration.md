@@ -29,7 +29,9 @@ class Article extends Model implements Auditable
 }
 ```
 
-> {tip} The default value is an empty `array`, which treats all model properties as OK for auditing.
+::: tip 
+The default value is an empty `array`, which treats all model properties as OK for auditing.
+:::
 
 ## Exclude attributes
 On the other hand, the `$auditExclude` acts as a **block list**, excluding all the properties in the `array` from being audited.
@@ -58,7 +60,9 @@ class Article extends Model implements Auditable
 }
 ```
 
-> {tip} The default value is an empty `array`, which treats all model properties as OK for auditing. 
+::: tip 
+The default value is an empty `array`, which treats all model properties as OK for auditing. 
+:::
 
 ### Globally
 You may set a default exclude set in the config. 
@@ -93,7 +97,9 @@ return [
 ### Locally
 This is done on a per `Auditable` model basis, by assigning a `bool` value to the `$auditStrict` attribute.
 
-> {tip} A locally defined strict value **always** takes precedence over a globally defined one.
+::: tip 
+A locally defined strict value **always** takes precedence over a globally defined one.
+:::
 
 ```php
 <?php
@@ -169,7 +175,9 @@ return [
 ### Locally
 This is done on a per `Auditable` model basis, by assigning a `bool` value to the `$auditTimestamps` attribute.
 
-> {tip} A locally defined timestamps value **always** takes precedence over a globally defined one.
+::: tip 
+A locally defined timestamps value **always** takes precedence over a globally defined one.
+:::
 
 ```php
 <?php
@@ -213,7 +221,9 @@ return [
 ### Locally
 This is done on a per `Auditable` model basis, by assigning an `int` value to the `$auditThreshold` attribute.
 
-> {tip} A locally defined threshold **always** takes precedence over a globally defined one.
+::: tip 
+A locally defined threshold **always** takes precedence over a globally defined one.
+:::
 
 ```php
 <?php
@@ -239,7 +249,9 @@ class Article extends Model implements Auditable
 
 The above configuration, will only keep the `10` latest `Audit` records.
 
-> {tip} By default, the `$auditThreshold` value is set to `0` (zero), which stands for no limit.
+::: tip 
+By default, the `$auditThreshold` value is set to `0` (zero), which stands for no limit.
+:::
 
 ## Audit events
 On a default configuration, the `created`, `updated`, `deleted` and `restored` Eloquent events will trigger an audit.
@@ -265,7 +277,9 @@ return [
 ### Locally
 This is done on a per `Auditable` model basis, by assigning an `array` value to the `$auditEvents` attribute.
 
-> {tip} Locally defined events **always** take precedence over globally defined ones.
+::: tip 
+Locally defined events **always** take precedence over globally defined ones.
+:::
 
 ```php
 <?php
@@ -317,7 +331,9 @@ protected $auditEvents = [
 
 The `created` and `updated` events will be handled by a custom `getMultiEventAttributes()` method
 
-> {note} Support for custom attribute getters and wildcards has been present since version 4.1.4.
+::: info 
+Support for custom attribute getters and wildcards has been present since version 4.1.4.
+:::
 
 ## Retrieved event
 Since Eloquent **5.5.0**, there's a new `retrieved` event. While supported by this package, `retrieved` audits are **not** enabled by default.
@@ -326,7 +342,9 @@ The main reason is to avoid a **huge** amount of `Audit` records, specially on b
 
 Keep in mind that when caching is active and depending on how it's configured, the `retrieved` event might not fire as often!
 
-> {tip} If you get a **PHP Fatal error:  Maximum function nesting level of '512' reached, aborting!** after enabling the `retrieved` event, make sure to check the [troubleshooting](troubleshooting) guide for help. 
+::: tip 
+If you get a **PHP Fatal error:  Maximum function nesting level of '512' reached, aborting!** after enabling the `retrieved` event, make sure to check the [troubleshooting](troubleshooting) guide for help. 
+:::
 
 ## Enable/Disable
 From version **6.0.1** going forward, enabling and disabling the auditing functionality has become much easier.

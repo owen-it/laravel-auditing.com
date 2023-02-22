@@ -60,7 +60,9 @@ class MyCustomDriver implements AuditDriver
 }
 ```
 
-> {tip} The `Database` driver is a good starting point to get ideas for a new custom driver implementation.
+::: tip 
+The `Database` driver is a good starting point to get ideas for a new custom driver implementation.
+:::
 
 ## Using a custom driver
 There are two ways of enabling a different audit driver.
@@ -106,4 +108,6 @@ class Article extends Model implements Auditable
 }
 ```
 
-> {tip} A locally defined driver **always** takes precedence over any globally defined one.
+::: tip 
+A locally defined driver **always** takes precedence over any globally defined one.
+:::

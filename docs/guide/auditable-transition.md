@@ -39,7 +39,9 @@ The `Auditable` interface defines a `transitionTo()` method, which is in charge 
 
 The method takes two arguments, an `Audit` which will be used as the history to go back or forward to, and a `bool` (optional), which will define if the **old** or the **new** data from the `Audit` should be used. 
 
-> {tip} By default, the **new** data will be used.
+::: tip 
+By default, the **new** data will be used.
+:::
 
 Still using the same `Article` model, here's how it works:
 ```php
@@ -68,4 +70,6 @@ dump($dirtyLatestArticleFromOld->getDirty());
 // ...
 ```
 
-> {note} The `transitionTo()` method updates model attributes without persisting to the database. It's the developer's responsibility to check that the new state is correct and calling `save()` on the model.
+::: info 
+The `transitionTo()` method updates model attributes without persisting to the database. It's the developer's responsibility to check that the new state is correct and calling `save()` on the model.
+:::

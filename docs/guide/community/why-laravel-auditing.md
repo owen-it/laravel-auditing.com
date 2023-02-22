@@ -10,21 +10,13 @@ sidebarDepth: 2
 
 ## Overview
 
-> The Laravel Auditing package is a powerful tool for developers who need to maintain strict control over the data in their applications. By providing detailed auditing capabilities for Eloquent models, this package helps developers to detect potential issues and ensure that their applications are running smoothly and securely.
+The Laravel Auditing package is a robust tool for Laravel developers who need to ensure that the data in their applications is secure and running smoothly. It offers detailed auditing capabilities for Eloquent models, enabling developers to keep track of every change that occurs in their models, including the creation, modification, and deletion of records, as well as any changes to their attributes.
 
-Laravel Auditing is a powerful package for Laravel developers that allows them to easily audit changes made to Eloquent models in their applications. With this package, you can keep track of every change that occurs in your models, including the creation, modification, and deletion of records, as well as any changes to their attributes.
+The package comes with a number of useful features that make it easy to customize and control the auditing process. For instance, it includes an Auditor class that allows developers to audit and clear audit records and Modifiers that can be used to modify attributes before they are audited. The package also offers various presentation options to access metadata and modified data in different ways. Resolvers provide a convenient way to obtain the basic data for audit, while drivers handle the storage and pruning of audit records.
 
-The Auditing package provides a number of useful features that make it easy to customize and control the auditing process. For example, the package includes an Auditor class that can be used to audit and clear audit records, as well as Modifiers that allow you to modify attributes before they are audited. This is particularly useful for handling sensitive data, which can be omitted or modified using this feature.
+The Laravel Auditing package further provides Transformation functionality, enabling developers to transform audit data before it is stored, useful for reformatting data for compatibility with another system. Tags are another helpful feature of the package, which enable developers to mark audit logs and filter and sort them, especially in large applications with many audit records.
 
-In addition, the package provides a variety of presentation options, which allow you to access metadata and modified data in several different ways. Resolvers provide a convenient way to get the basic data for audit, while drivers handle the storage and pruning of audit records.
-
-The package also includes Transformation functionality, which allows you to transform audit data before it is stored. This can be useful if you need to reformat the data for compatibility with another system, for example.
-
-Tags are another useful feature of the Laravel Auditing package. Tags allow you to mark audit logs and make them easy to filter and sort, which can be particularly useful for large applications with many audit records.
-
-Finally, the package includes an Events system, which provides a simple observer pattern implementation, allowing you to subscribe and listen to audit events. This can be particularly useful for triggering custom actions or notifications based on specific audit events.
-
-Overall, the Laravel Auditing package is a powerful tool for developers who need to maintain strict control over the data in their applications. By providing detailed auditing capabilities for Eloquent models, this package helps developers to detect potential issues and ensure that their applications are running smoothly and securely.
+Finally, the package includes an Events system that offers a simple observer pattern implementation, allowing developers to subscribe and listen to audit events. This feature can be particularly useful for triggering custom actions or notifications based on specific audit events. Overall, the Laravel Auditing package is an essential tool for developers who require strict control over the data in their applications.
 
 
 ## Why should I use Laravel Auditing?
@@ -42,6 +34,8 @@ There are several reasons why you might want to use Laravel Auditing in your app
 - **Easy to use**: The package is easy to install and configure, with a simple API that makes it easy to audit your models with just a few lines of code.
 
 - **Notifications**: The Events system in Laravel Auditing allows you to trigger custom actions or notifications based on specific audit events. This can be particularly useful for keeping track of critical changes or responding to potential security issues.
+
+- **Scalable**: With the ability to mark and filter audit logs, Laravel Auditing is well-suited for large applications with many audit records. Additionally, its Events system provides a simple observer pattern implementation, allowing you to subscribe and listen to audit events, which can be useful for triggering custom actions or notifications based on specific audit events.
 
 ## Features
 

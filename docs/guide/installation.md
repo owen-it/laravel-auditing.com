@@ -6,12 +6,16 @@ To get the latest package version, execute the following command from your proje
 composer require owen-it/laravel-auditing
 ```
 
-> {tip} This package supports **Laravel** and **Lumen** from version 5.2 onward.
+::: tip 
+This package supports **Laravel** and **Lumen** from version 5.2 onward.
+:::
 
 # Upgrading
 If you're [upgrading](upgrading.md), make sure the `audits` table schema is up to date!
 
-> {tip} Changes to the table schema are needed when upgrading from any of the previous versions!
+::: tip 
+Changes to the table schema are needed when upgrading from any of the previous versions!
+:::
 
 # Configuration
 The Laravel and Lumen configurations vary slightly, so here are the instructions for each of the frameworks.
@@ -29,7 +33,9 @@ Edit the `config/app.php` file and add the following line to register the servic
 ],
 ```
 
-> {tip} If you're on Laravel version **5.5** or higher, you can skip this part of the setup in favour of the Auto-Discovery feature.
+::: tip 
+If you're on Laravel version **5.5** or higher, you can skip this part of the setup in favour of the Auto-Discovery feature.
+:::
 
 ## Lumen
 Edit the `bootstrap/app.php` file and add the following line to register the service provider:
@@ -72,7 +78,9 @@ protected $commands = [
 // ...
 ```
 
-> {note} The service provider registration is mandatory in order for the configuration to be published!
+::: info 
+The service provider registration is mandatory in order for the configuration to be published!
+:::
 
 # Publishing
 After configuring your framework of choice, use the following command to publish the configuration settings:

@@ -46,7 +46,9 @@ Passing `true` as the first argument will convert the data into its **JSON** rep
 echo $audit->getMetadata(true, JSON_PRETTY_PRINT);
 ```
 
-> {tip} The second argument accepts a bitmask of options. To know more, read the [`json_encode()`](http://php.net/manual/en/function.json-encode.php) function documentation.
+::: tip 
+The second argument accepts a bitmask of options. To know more, read the [`json_encode()`](http://php.net/manual/en/function.json-encode.php) function documentation.
+:::
 
 **Output:**
 ```json
@@ -66,7 +68,9 @@ echo $audit->getMetadata(true, JSON_PRETTY_PRINT);
 }
 ```
 
-> {note} Depending on the `$visible` property of the `User` model, other `user_` prefixed attributes may become available.
+::: info 
+Depending on the `$visible` property of the `User` model, other `user_` prefixed attributes may become available.
+:::
 
 Lastly, the `Audit` attributes can also be accessed directly, like in any other `Eloquent` model:
 
@@ -143,7 +147,9 @@ echo $audit->getModified(true);
 {"title":{"new":"How To Audit Eloquent Models","old":"How to audit models"},"content":{"new":"First, start by installing the laravel-auditing package.","old":"This is a draft."}}
 ```
 
-> {tip} The `getModified()` method honors all attribute **mutators** and/or **casts** defined in the `Auditable` model, transforming the data accordingly.
+::: tip 
+The `getModified()` method honors all attribute **mutators** and/or **casts** defined in the `Auditable` model, transforming the data accordingly.
+:::
 
 Direct access to the **old** and **new** values is also possible:
 
@@ -213,7 +219,9 @@ Blade template:
 </ul>
 ```
 
-> {tip} The use of pagination should be taken into account when dealing with large `Audit` collections.
+::: tip 
+The use of pagination should be taken into account when dealing with large `Audit` collections.
+:::
 
 ### Displaying a single Audit
 Present a single `Audit` using a _diff like_ view.

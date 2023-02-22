@@ -2,7 +2,9 @@
 Starting from version **4.1.0**, support for custom `Audit` models was added.
 This lets the user extend implementations other than the traditional `Illuminate\Database\Eloquent\Model`.
 
-> {tip} `Audit` models must implement the `OwenIt\Auditing\Contracts\Audit` interface!
+::: tip 
+`Audit` models must implement the `OwenIt\Auditing\Contracts\Audit` interface!
+:::
 
 ## MongoDB Audit model example
 Start by installing the [jenssegers/mongodb](https://github.com/jenssegers/laravel-mongodb) package:
@@ -53,7 +55,9 @@ class MongoAudit extends Model implements \OwenIt\Auditing\Contracts\Audit
 }
 ```
 
-> {tip} The bulk of the `Audit` logic is in the `OwenIt\Auditing\Audit` trait.
+::: tip 
+The bulk of the `Audit` logic is in the `OwenIt\Auditing\Audit` trait.
+:::
 
 ## Defining the Audit model
 
