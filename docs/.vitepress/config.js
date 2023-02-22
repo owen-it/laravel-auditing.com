@@ -180,7 +180,7 @@ module.exports = withPwa(defineConfig({
     nav: [
       {
         text: 'Guide',
-        items: guidesNav,
+        link: '/guide/model-setup',
       },
       {
         text: 'Community',

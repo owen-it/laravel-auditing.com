@@ -1,6 +1,8 @@
 # Model Setup
-Setting up a model for auditing could not be simpler.
-Just _use_ the `OwenIt\Auditing\Auditable` trait in the model you wish to audit and _implement_ the `OwenIt\Auditing\Contracts\Auditable` interface.
+
+Setting up a model for auditing is a breeze with OwenIt\Auditing. To get started, simply _use_ the `OwenIt\Auditing\Auditable` trait in the model you wish to audit and _implement_ the `OwenIt\Auditing\Contracts\Auditable` interface.
+
+To install the package and all its dependencies, please refer to the [installation instructions](installation.md) available on our website. Once the package is installed, you can quickly and easily set up auditing for your Laravel application.
 
 ```php
 <?php
