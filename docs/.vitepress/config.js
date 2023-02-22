@@ -168,7 +168,7 @@ module.exports = withPwa(defineConfig({
     logo: '/logo.svg',
 
     editLink: {
-      pattern: 'https://github.com/owen-it/laravel-auditing/edit/main/docs/:path',
+      pattern: 'https://github.com/owen-it/laravel-auditing.com/edit/main/docs/:path',
       text: 'Edit this page on GitHub',
     },
 
