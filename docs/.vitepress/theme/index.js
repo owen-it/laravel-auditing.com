@@ -4,8 +4,9 @@ import { Icon } from '@iconify/vue'
 import 'floating-vue/dist/style.css'
 import './style/vars.pcss'
 import './style/index.pcss'
-import MeetTeam from './MeetTeam.vue'
-import SponsorsGroup from './SponsorsGroup.vue'
+import MeetTeam from './components/MeetTeam.vue'
+import SponsorsGroup from './components/SponsorsGroup.vue'
+import VideoLink from './components/VideoLink.vue'
 
 export default {
   ...DefaultTheme,
@@ -20,5 +21,6 @@ export default {
     app.component('Icon', Icon)
     app.component('MeetTeam', MeetTeam)
     app.component('SponsorsGroup', SponsorsGroup)
+    app.component('VideoLink', VideoLink)
   },
 }

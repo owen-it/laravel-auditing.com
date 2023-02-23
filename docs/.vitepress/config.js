@@ -243,9 +243,9 @@ module.exports = withPwa(defineConfig({
     },
 
     algolia: {
-      appId: 'LZPX1EL6QD',
-      apiKey: '9a9ccb900854ccf39edf971abc277692',
-      indexName: 'docs',
+      appId: '83OCX29P1R',
+      apiKey: 'ddd92675c3dced4b5baa450554dd53c0',
+      indexName: 'laravel-auditing',
     },
   },
 }))

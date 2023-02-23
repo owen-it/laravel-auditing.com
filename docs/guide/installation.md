@@ -1,4 +1,5 @@
 # Installation
+
 The Laravel Auditing package should be installed via [Composer](http://getcomposer.org/doc/00-intro.md).
 To get the latest package version, execute the following command from your project root:
 
@@ -18,9 +19,13 @@ Changes to the table schema are needed when upgrading from any of the previous v
 :::
 
 # Configuration
+
 The Laravel and Lumen configurations vary slightly, so here are the instructions for each of the frameworks.
 
+<VideoLink href="https://youtu.be/5azPbhmQaXs" class="my-5">Additionally, you can utilize a video tutorial for guidance on the installation process</VideoLink>
+
 ## Laravel
+
 Edit the `config/app.php` file and add the following line to register the service provider:
 
 ```php
