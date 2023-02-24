@@ -21,7 +21,7 @@ return [
 ```
 
 ::: tip 
-Read more about this in the [General Configuration](general-configuration.md) section.
+Read more about this in the [General Configuration](general-configuration) section.
 :::
 
 ## UUID over auto-incrementing ids

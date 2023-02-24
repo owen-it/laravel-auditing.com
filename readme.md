@@ -1,6 +1,6 @@
 # Laravel Auditing Documentation
 
-[link to start of docs](documentation.md)
+[link to start of docs](documentation)
 
 ## Contributing
 

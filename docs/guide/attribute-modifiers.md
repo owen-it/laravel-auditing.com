@@ -61,7 +61,7 @@ class Article extends Model implements Auditable
 ```
 
 ::: info 
-[Auditable Transition](auditable-transition.md) won't work if an `AttributeRedactor` is set, since redacted data can't be used when transitioning states.
+[Auditable Transition](auditable-transition) won't work if an `AttributeRedactor` is set, since redacted data can't be used when transitioning states.
 :::
 
 ## Attribute Encoders
