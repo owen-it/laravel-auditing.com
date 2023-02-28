@@ -175,7 +175,7 @@ module.exports = withPwa(defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2022-present Antério Vieira',
+      copyright: `Copyright © ${(new Date()).getFullYear()}-present Antério Vieira`,
     },
 
     nav: [
