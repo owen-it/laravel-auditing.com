@@ -53,9 +53,9 @@ features:
 
 <hr class="border-0 border-t border-gray-500 opacity-10 my-24" />
 
-<div class="container mx-auto">
+<div class="container px-10 mx-auto max-w-6xl">
   <h2>
-    Meet the team
+    The people who made it happen
   </h2>
 
   <MeetTeam class="mb-24" />
@@ -69,6 +69,6 @@ features:
 
 <style lang="postcss" scoped>
 h2 {
-  @apply text-center text-2xl md:text-3xl;
+  @apply text-left text-2xl md:text-3xl;
 }
 </style>

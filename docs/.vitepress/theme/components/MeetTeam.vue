@@ -27,6 +27,14 @@ const teamMembers: TeamMember[] = [
     sponsor: 'https://github.com/sponsors/anteriovieira',
   },
   {
+    name: 'Quetzy Garcia',
+    avatar: 'https://avatars.githubusercontent.com/u/1413966?v=4',
+    description: 'Software engineer and open source contributor',
+    github: 'https://github.com/quetzyg',
+    twitter: 'https://twitter.com/quetzyg',
+    sponsor: 'https://github.com/sponsors/quetzyg',
+  },
+  {
     name: 'Morten D. Hansen',
     avatar: 'https://avatars.githubusercontent.com/u/5455310?v=4',
     description: 'PHP developer and system architecture enthusiast',
@@ -39,7 +47,7 @@ const teamMembers: TeamMember[] = [
 
 <template>
   <div class="my-12 flex flex-col items-stretch gap-12">
-    <div class="grid gap-6 md:grid-cols-3 mx-auto justify-center">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mx-auto justify-center">
       <div
         v-for="(tm, index) of teamMembers"
         :key="index"
