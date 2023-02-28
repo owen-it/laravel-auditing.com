@@ -58,17 +58,23 @@ features:
     The people who made it happen
   </h2>
 
-  <MeetTeam class="mb-24" />
+  <MeetTeam class="mb-10" />
 
   <h2>
     Sponsors
   </h2>
 
-  <SponsorsGroup />
+  <SponsorsGroup class="mb-10" />
+
+  <h2>
+    Contributors
+  </h2>
+
+  <Contributors class="mb-10" />
 </div>
 
 <style lang="postcss" scoped>
 h2 {
-  @apply text-left text-2xl md:text-3xl;
+  @apply text-left !text-xl md:text-3xl;
 }
 </style>

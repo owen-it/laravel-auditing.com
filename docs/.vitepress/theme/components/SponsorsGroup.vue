@@ -18,7 +18,7 @@ const base = '/sponsor'
 </script>
 
 <template>
-    <div class="my-12 flex flex-col items-stretch gap-12">
+    <div class="my-10 flex flex-col items-stretch gap-12">
         <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-4 justify-center mx-auto">
             <a v-for="{ url, img, name } of sponsors" :href="url" target="_blank" class="bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 rounded-md p-10 border border-gray-400 flex items-center"
                 rel="sponsored noopener">

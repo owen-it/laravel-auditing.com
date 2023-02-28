@@ -7,6 +7,7 @@ import './style/index.pcss'
 import MeetTeam from './components/MeetTeam.vue'
 import SponsorsGroup from './components/SponsorsGroup.vue'
 import VideoLink from './components/VideoLink.vue'
+import Contributors from './components/Contributors.vue'
 
 export default {
   ...DefaultTheme,
@@ -22,5 +23,6 @@ export default {
     app.component('MeetTeam', MeetTeam)
     app.component('SponsorsGroup', SponsorsGroup)
     app.component('VideoLink', VideoLink)
+    app.component('Contributors', Contributors)
   },
 }
