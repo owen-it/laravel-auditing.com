@@ -334,5 +334,54 @@
         "avatar": "https://avatars.githubusercontent.com/u/20643070?s=60&v=4",
         "path": "/scriptburn",
         "hovercard_url": "/users/scriptburn/hovercard"
+    },
+    {
+        "id": 26563010,
+        "login": "juanotiz1997",
+        "avatar": "https://avatars.githubusercontent.com/u/26563010?s=60&v=4",
+        "path": "/juanotiz1997",
+        "hovercard_url": "/users/juanotiz1997/hovercard"
+    },
+    {
+        "id": 79208641,
+        "login": "angeljqv",
+        "avatar": "https://avatars.githubusercontent.com/u/79208641?s=60&v=4",
+        "path": "/angeljqv",
+        "hovercard_url": "/users/angeljqv/hovercard"
+    },
+    {
+        "id": 204594,
+        "login": "AJenbo",
+        "avatar": "https://avatars.githubusercontent.com/u/204594?s=60&v=4",
+        "path": "/AJenbo",
+        "hovercard_url": "/users/AJenbo/hovercard"
+    },
+    {
+        "id": 4572444,
+        "login": "KuenzelIT",
+        "avatar": "https://avatars.githubusercontent.com/u/4572444?s=60&v=4",
+        "path": "/KuenzelIT",
+        "hovercard_url": "/users/KuenzelIT/hovercard"
+    },
+    {
+        "id": 919524,
+        "login": "lincolnpjames",
+        "avatar": "https://avatars.githubusercontent.com/u/919524?s=60&v=4",
+        "path": "/lincolnpjames",
+        "hovercard_url": "/users/lincolnpjames/hovercard"
+    },
+    {
+        "id": 12064555,
+        "login": "AvOeffelen",
+        "avatar": "https://avatars.githubusercontent.com/u/12064555?s=60&v=4",
+        "path": "/AvOeffelen",
+        "hovercard_url": "/users/AvOeffelen/hovercard"
+    },
+    {
+        "id": 93479789,
+        "login": "evgeek",
+        "avatar": "https://avatars.githubusercontent.com/u/93479789?s=60&v=4",
+        "path": "/evgeek",
+        "hovercard_url": "/users/evgeek/hovercard"
     }
 ]
