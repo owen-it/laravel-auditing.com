@@ -26,21 +26,25 @@ The Laravel and Lumen configurations vary slightly, so here are the instructions
 
 ## Laravel
 
-Edit the `config/app.php` file and add the following line to register the service provider:
+**Publishing**
 
-```php
-'providers' => [
-    // ...
+Use the following command to publish the configuration settings:
 
-    OwenIt\Auditing\AuditingServiceProvider::class,
-
-    // ...
-],
+```sh
+php artisan vendor:publish --provider "OwenIt\Auditing\AuditingServiceProvider" --tag="config"
 ```
 
-::: tip 
-If you're on Laravel version **5.5** or higher, you can skip this part of the setup in favour of the Auto-Discovery feature.
-:::
+This will create the `config/audit.php` configuration file.
+
+You can read more about the configuration options in the [General Configuration](general-configuration) section.
+
+**Database**
+
+Publish the `audits` table migration to the `database/` directory with the following command:
+
+```sh
+php artisan vendor:publish --provider "OwenIt\Auditing\AuditingServiceProvider" --tag="migrations"
+```
 
 ## Lumen
 Edit the `bootstrap/app.php` file and add the following line to register the service provider:
@@ -65,38 +69,13 @@ $app->withEloquent();
 // ...
 ```
 
-The `vendor:publish` command doesn't exist in Lumen, so an extra package must be installed:
+The `vendor:publish` command doesn't exist in Lumen, so you will need to manually copy the required files:
 
 ```sh
-composer require laravelista/lumen-vendor-publish
+mkdir -p config
+cp vendor/owen-it/laravel-auditing/config/audit.php config/audit.php
+cp vendor/owen-it/laravel-auditing/database/migrations/audits.stub database/migrations/`date +"%Y_%m_%d_%H%M"`00_create_audit_table.php
 ```
-
-After the package is installed, the command must be registered in `app/Console/Kernel.php`:
-
-```php
-// ...
-
-protected $commands = [
-    \Laravelista\LumenVendorPublish\VendorPublishCommand::class,
-];
-
-// ...
-```
-
-::: info 
-The service provider registration is mandatory in order for the configuration to be published!
-:::
-
-# Publishing
-After configuring your framework of choice, use the following command to publish the configuration settings:
-
-```sh
-php artisan vendor:publish --provider "OwenIt\Auditing\AuditingServiceProvider" --tag="config"
-```
-
-This will create the `config/audit.php` configuration file.
-
-You can read more about the configuration options in the [General Configuration](general-configuration) section.
 
 Lumen by default doesn't read from `config` location. Make sure to load the configuration on boot. Edit the `bootstrap/app.php`:
 
@@ -110,13 +89,6 @@ return $app;
 // ...
 ```
 
-# Database
-Publish the `audits` table migration to the `database/` directory with the following command:
-
-```sh
-php artisan vendor:publish --provider "OwenIt\Auditing\AuditingServiceProvider" --tag="migrations"
-```
- 
 ## Customisation
 If needed, the migration file can be customised.
 Have a look at the [Audit Migration](audit-migration) section for some of the changes that can be performed.
