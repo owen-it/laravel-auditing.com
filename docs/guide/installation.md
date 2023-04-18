@@ -68,17 +68,15 @@ $app->withEloquent();
 The `vendor:publish` command doesn't exist in Lumen, so an extra package must be installed:
 
 ```sh
-composer require laravelista/lumen-vendor-publish
+composer require irazasyed/larasupport
 ```
 
-After the package is installed, the command must be registered in `app/Console/Kernel.php`:
+After the package is installed, the service provider must be registered in `bootstrap/app.php`:
 
 ```php
 // ...
 
-protected $commands = [
-    \Laravelista\LumenVendorPublish\VendorPublishCommand::class,
-];
+$app->register(Irazasyed\Larasupport\Providers\ArtisanServiceProvider::class);
 
 // ...
 ```
