@@ -36,11 +36,11 @@ $table->nullableMorphs('user');
 to
 
 ```php
-$table->uuid('user_id')->nullable();
 $table->string('user_type')->nullable();
+$table->uuid('user_id')->nullable();
 $table->index([
-    'user_id', 
     'user_type',
+    'user_id', 
 ]);
 ```
 
@@ -52,11 +52,11 @@ $table->morphs('auditable');
 to
 
 ```php
-$table->uuid('auditable_id');
 $table->string('auditable_type');
+$table->uuid('auditable_id');
 $table->index([
-    'auditable_id', 
     'auditable_type',
+    'auditable_id', 
 ]);
 ```
 
