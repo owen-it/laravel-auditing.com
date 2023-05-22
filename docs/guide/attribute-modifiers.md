@@ -95,7 +95,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use OwenIt\Auditing\Contracts\Auditable;
-use OwenIt\Auditing\Redactors\LeftRedactor;
+use OwenIt\Auditing\Encoders\Base64Encoder;
 
 class Article extends Model implements Auditable
 {
