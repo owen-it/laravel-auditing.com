@@ -12,7 +12,7 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     name: 'Raphael França',
-    avatar: 'https://media.licdn.com/dms/image/D4D03AQFtdrtFC1KV9A/profile-displayphoto-shrink_800_800/0/1675116199496?e=1682553600&v=beta&t=DV1f7mKJx2PhdkpLyJo2WbbluQs8ZFi6DfSoCE-ceU4',
+    avatar: 'https://avatars.githubusercontent.com/u/4260727?v=4',
     description: 'Web Server, and Cloud Computing',
     github: 'https://github.com/raphaelfranca',
     linkedin: 'https://www.linkedin.com/in/raphaelofranca/',

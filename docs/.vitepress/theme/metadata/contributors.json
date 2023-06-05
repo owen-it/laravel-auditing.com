@@ -397,5 +397,33 @@
     "avatar": "https://avatars.githubusercontent.com/u/9074391?s=60&v=4",
     "path": "/SanderMuller",
     "hovercard_url": "/users/SanderMuller/hovercard"
+  },
+  {
+    "id": 49699333,
+    "login": "dependabot[bot]",
+    "avatar": "https://avatars.githubusercontent.com/in/29110?s=60&v=4",
+    "path": "/apps/dependabot",
+    "hovercard_url": "/users/dependabot%5Bbot%5D/hovercard"
+  },
+  {
+    "id": 6988950,
+    "login": "ymslavov",
+    "avatar": "https://avatars.githubusercontent.com/u/6988950?s=60&v=4",
+    "path": "/ymslavov",
+    "hovercard_url": "/users/ymslavov/hovercard"
+  },
+  {
+    "id": 348801,
+    "login": "ChrisThompsonTLDR",
+    "avatar": "https://avatars.githubusercontent.com/u/348801?s=60&v=4",
+    "path": "/ChrisThompsonTLDR",
+    "hovercard_url": "/users/ChrisThompsonTLDR/hovercard"
+  },
+  {
+    "id": 50789773,
+    "login": "thrashzone13",
+    "avatar": "https://avatars.githubusercontent.com/u/50789773?s=60&v=4",
+    "path": "/thrashzone13",
+    "hovercard_url": "/users/thrashzone13/hovercard"
   }
 ]
