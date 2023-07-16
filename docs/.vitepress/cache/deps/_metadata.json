@@ -1,29 +1,44 @@
 {
-  "hash": "5473abfd",
-  "browserHash": "3814496e",
+  "hash": "720767a1",
+  "browserHash": "71bef365",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "8bc2bba5",
+      "fileHash": "d0316794",
       "needsInterop": false
     },
     "floating-vue": {
       "src": "../../../../node_modules/floating-vue/dist/floating-vue.es.js",
       "file": "floating-vue.js",
-      "fileHash": "c664fe7f",
+      "fileHash": "5ae82f56",
       "needsInterop": false
     },
     "@iconify/vue": {
       "src": "../../../../node_modules/@iconify/vue/dist/iconify.mjs",
       "file": "@iconify_vue.js",
-      "fileHash": "e61f9bb4",
+      "fileHash": "f8a10559",
       "needsInterop": false
+    },
+    "@vueuse/core": {
+      "src": "../../../../node_modules/@vueuse/core/index.mjs",
+      "file": "@vueuse_core.js",
+      "fileHash": "86c005bc",
+      "needsInterop": false
+    },
+    "lodash.orderby": {
+      "src": "../../../../node_modules/lodash.orderby/index.js",
+      "file": "lodash__orderby.js",
+      "fileHash": "48a01019",
+      "needsInterop": true
     }
   },
   "chunks": {
     "chunk-R647EDCJ": {
       "file": "chunk-R647EDCJ.js"
+    },
+    "chunk-RSJERJUL": {
+      "file": "chunk-RSJERJUL.js"
     }
   }
 }

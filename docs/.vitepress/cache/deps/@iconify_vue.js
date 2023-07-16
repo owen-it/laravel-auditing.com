@@ -2,6 +2,7 @@ import {
   defineComponent,
   h
 } from "./chunk-R647EDCJ.js";
+import "./chunk-RSJERJUL.js";
 
 // node_modules/@iconify/vue/dist/iconify.mjs
 var matchIconName = /^[a-z0-9]+(-[a-z0-9]+)*$/;
