@@ -3,7 +3,7 @@ import { useStorage } from '@vueuse/core'
 
 const contributors = useStorage<any[]>('contributors', [])
 
-const fromRepo = r => fetch(`https://ungh.cc/repos/owen-it/${r}/contributors`)
+const fromRepo = r => fetch(`https://contributors.laravel-auditing.com/owen-it/${r}`)
     .then((res) => res.json()).catch(() => [])
 
 const getContributors = async () => {
@@ -14,7 +14,7 @@ const getContributors = async () => {
   ])
 
   contributors.value = users.reduce((acc, data) => {
-    return [...acc, ...data.contributors]
+    return [...acc, ...data.filter(i => i.username)]
   }, []).reduce((acc, user) => {
     const existingUser = acc.find(u => u.id === user.id)
 
