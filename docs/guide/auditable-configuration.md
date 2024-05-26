@@ -364,3 +364,47 @@ Article::create([
 // Re-enable auditing
 Article::enableAuditing();
 ```
+
+For version **13.6.6** and above, you may temporarily disable auditing for a given class within a callback.
+The static `withoutAuditing` method accepts a closure as its only argument. Any value returned by the
+closure will be returned by the withoutAuditing method.
+
+```php
+<?php
+
+$article = Article::withoutAuditing(function () {
+    // This operation won't be audited
+    $article = Article::create([
+        // ...
+    ]);
+
+    // This operation will be audited
+    Category::create([
+        'article_id' => $article->id,
+        // ...
+    ]);
+
+    return $article;
+});
+```
+
+To temporarily disable auditing for more than one class, the `withoutAuditing` method must be called for each.
+
+```php
+<?php
+
+$article = Article::withoutAuditing(function () {
+    // This operation won't be audited
+    $article = Article::create([
+        // ...
+    ]);
+
+    // This operation won't be audited
+    Category::withoutAuditing(fn () => Category::create([
+        'article_id' => $article->id,
+        // ...
+    ]));
+
+    return $article;
+});
+```
