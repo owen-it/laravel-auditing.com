@@ -366,7 +366,7 @@ Article::enableAuditing();
 ```
 
 For version **13.6.6** and above, you may temporarily disable auditing for a given class within a callback.
-The static `withoutAuditing` method accepts a closure as its only argument. Any value returned by the
+The static `withoutAuditing(callable $callback, bool $globally = false)` method accepts a closure as argument. Any value returned by the
 closure will be returned by the withoutAuditing method.
 
 ```php
@@ -388,7 +388,7 @@ $article = Article::withoutAuditing(function () {
 });
 ```
 
-To temporarily disable auditing for more than one class, the `withoutAuditing` method must be called for each.
+To temporarily disable auditing for more than one class, the `withoutAuditing` method must be called for each, or it can be disabled on the entire block setting second argument(`$globally`) to true
 
 ```php
 <?php
