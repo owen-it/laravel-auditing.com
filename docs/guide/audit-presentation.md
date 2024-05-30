@@ -144,7 +144,16 @@ echo $audit->getModified(true);
 
 **Output:**
 ```json
-{"title":{"new":"How To Audit Eloquent Models","old":"How to audit models"},"content":{"new":"First, start by installing the laravel-auditing package.","old":"This is a draft."}}
+{
+    "title": {
+        "new": "How To Audit Eloquent Models",
+        "old":"How to audit models"
+    },
+    "content": {
+        "new": "First, start by installing the laravel-auditing package.",
+        "old": "This is a draft."
+    }
+}
 ```
 
 ::: tip 
