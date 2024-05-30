@@ -147,7 +147,7 @@ echo $audit->getModified(true);
 {
     "title": {
         "new": "How To Audit Eloquent Models",
-        "old":"How to audit models"
+        "old": "How to audit models"
     },
     "content": {
         "new": "First, start by installing the laravel-auditing package.",
