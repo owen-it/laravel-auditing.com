@@ -14,6 +14,10 @@ const getContributors = async () => {
   ])
 
   contributors.value = users.reduce((acc, data = []) => {
+    if (!Array.isArray(data)) {
+      return acc
+    }
+
     return [...acc, ...data.filter(i => i.username)]
   }, []).reduce((acc, user) => {
     const existingUser = acc.find(u => u.id === user.id)
