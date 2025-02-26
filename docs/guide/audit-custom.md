@@ -17,7 +17,7 @@ class Article extends Model implements \OwenIt\Auditing\Contracts\Auditable
 
 ```
 Migrations for this example looks like this:
-```php 
+```php
 Schema::create('categories', function (Blueprint $table) {
     $table->increments('id');
     $table->string('name');
@@ -36,15 +36,15 @@ Many things can be categorized, so we are using a morphToMany relation so that w
 
 In version 13 of laravel-auditing, you can use Auditables attach, detach and sync pass-through methods like this: `$article->auditAttach('categories', $category);`. It works the same way as the [Eloquent attach](https://laravel.com/docs/master/eloquent-relationships#attaching-detaching), but it registers a custom event and writes an audit of the changes as if it was an array property of article.
 
-First argument to the auditAttach, auditDetach and auditSync methods is the name of the relationship. In the example above, that is "categories". 
+First argument to the auditAttach, auditDetach and auditSync methods is the name of the relationship. In the example above, that is "categories".
 
-The audited value is the array version of the relationship return! 
+The audited value is the array version of the relationship return!
 
 ## Example: Custom log event
 
 You may custom-log any values you wish, as long as they are on an Auditable model. It works by dispatching the `\OwenIt\Auditing\Events\AuditCustom` event with the Auditable as argument when you have defined what to log
 
-```php 
+```php
 $article = Article::find(1);
 $article->auditEvent = 'whateverYouWant';
 $article->isCustomEvent = true;
@@ -54,5 +54,9 @@ $article->auditCustomOld = [
 $article->auditCustomNew = [
     'customExample' => 'Darth Vader'
 ];
-Event::dispatch(AuditCustom::class, [$article]);
+Event::dispatch(new AuditCustom($article));
 ```
+
+::: tip
+Prior to version 14, this was `Event::dispatch(AuditCustom::class, [$article]);`
+:::
