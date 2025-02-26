@@ -15,6 +15,11 @@ composer require doctrine/dbal
 Any custom changes made to the initial [Audit Migration](audit-migration) should be taken into account, do not blindly copy and paste!
 :::
 
+## Upgrade from version 13.x to 14
+Version 14 changes how [Custom Audits](audit-custom) are dispatched. If you aren't using Custom Audits then you have no changes to make.
+
+Any code similar to `Event::dispatch(AuditCustom::class, [$article]);` must be changed to `Event::dispatch(new AuditCustom($article));`.
+
 ## Upgrade from version 12.x to 13
 Version 13 introduces a couple of changes to config and resolvers.
 

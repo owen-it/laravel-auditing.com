@@ -22,5 +22,5 @@
   * [Auditor](auditor)
   * [Custom Audits](audit-custom)
 * Help
-  * [Problems?](problems)
-  * [Troubleshooting](troubleshooting)
+  * [Problems?](community/problems)
+  * [Troubleshooting](community/troubleshooting)
