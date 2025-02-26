@@ -13,7 +13,7 @@ const getContributors = async () => {
     fromRepo('laravel-auditing.com'),
   ])
 
-  contributors.value = users.reduce((acc, data) => {
+  contributors.value = users.reduce((acc, data = []) => {
     return [...acc, ...data.filter(i => i.username)]
   }, []).reduce((acc, user) => {
     const existingUser = acc.find(u => u.id === user.id)
