@@ -59,6 +59,7 @@ Usually, the real IP address will be passed via an **X-Forwarded-For** HTTP head
 <?php
 namespace App\Resolvers;
 
+use OwenIt\Auditing\Contracts\Auditable;
 use Illuminate\Support\Facades\Request;
 
 class IpAddressResolver implements \OwenIt\Auditing\Contracts\Resolver
@@ -66,7 +67,7 @@ class IpAddressResolver implements \OwenIt\Auditing\Contracts\Resolver
     /**
      * {@inheritdoc}
      */
-    public static function resolve(): string
+    public static function resolve(Auditable $auditable)
     {
         return Request::header('HTTP_X_FORWARDED_FOR', '0.0.0.0');
     }
@@ -100,13 +101,14 @@ namespace App\Resolvers;
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Request;
+use OwenIt\Auditing\Contracts\Auditable;
 
 class UrlResolver implements \OwenIt\Auditing\Contracts\Resolver
 {
     /**
      * {@inheritdoc}
      */
-    public static function resolve(): string
+    public static function resolve(Auditable $auditable)
     {
         if (App::runningInConsole()) {
             return 'console';
@@ -144,13 +146,14 @@ The following example will return a default string when the `User-Agent` HTTP he
 namespace App\Resolvers;
 
 use Illuminate\Support\Facades\Request;
+use OwenIt\Auditing\Contracts\Auditable;
 
 class UserAgentResolver implements \OwenIt\Auditing\Contracts\Resolver
 {
     /**
      * {@inheritdoc}
      */
-    public static function resolve()
+    public static function resolve(Auditable $auditable)
     {
         // Default to "N/A" if the User Agent isn't available
         return Request::header('User-Agent', 'N/A');
